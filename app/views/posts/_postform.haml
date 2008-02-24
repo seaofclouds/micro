@@ -1,0 +1,126 @@
+= error_messages_for :post, :message => nil
+
+- unless mobile_safari?
+  - content_for :head_javascript do
+    = javascript_include_tag "jtageditor.js"
+    = javascript_include_tag "jtageditor-textile.js"
+  - content_for :head_javascript_inline do
+    :plain
+        $("form textarea.wysiwyg").jTagEditor({ 
+            tagSet:"/javascripts/jtageditor-textile.js",
+            tagMask:"",
+            insertOnShiftEnter:"",
+            insertOnCtrlEnter:"",
+          });
+        $("form div#post_body textarea").css("height", "20em")
+        $("form div#post_excerpt").mouseover(function( ){
+          $("form div#post_excerpt .jTagEditor-toolBar").css("display", "block");
+          $("form div#post_excerpt textarea").css("height", "5.98em")
+        });
+        $("form div#post_body").mouseover(function( ){
+          $("form div#post_body .jTagEditor-toolBar").css("display", "block");
+          $("form div#post_body textarea").css("height", "17.98em")
+        });
+        $("form div#post_excerpt").mouseout(function( ){
+          $("form div#post_excerpt .jTagEditor-toolBar").css("display", "none");
+          $("form div#post_excerpt textarea").css("height", "8em")
+        });
+        $("form div#post_body").mouseout(function( ){
+          $("form div#post_body .jTagEditor-toolBar").css("display", "none");
+          $("form div#post_body textarea").css("height", "20em")
+        });
+  - content_for :head_style do  
+    = stylesheet_link_tag "jtageditor-textile"
+
+- if @post.excerpt.blank?
+  - content_for :head_javascript_inline do
+    :plain
+      $("fieldset.excerpt").hide();
+      $("a.toggle-excerpt").click(function() {
+        if ($(this).text() == 'add an excerpt'){
+          $(this).text("hide excerpt");
+          $("fieldset.excerpt").show();
+        } else {
+          $(this).text("add an excerpt");
+          $("fieldset.excerpt").hide(); 
+        }
+        return false;
+      });
+      $("a.cancel").click(function() {
+        $("fieldset.excerpt").hide();
+        $("a.toggle-excerpt").text("add an excerpt");
+      });
+- if @post.excerpt?
+  - content_for :head_javascript_inline do
+    :plain
+      $("a.toggle-excerpt").click(function() {
+        if ($(this).text() == 'show excerpt'){
+          $(this).text("hide excerpt");
+          $("fieldset.excerpt").show();
+        } else {
+          $(this).text("show excerpt");
+          $("fieldset.excerpt").hide(); 
+        }
+        return false;
+      });
+      $("a.cancel").click(function() {
+        $("fieldset.excerpt").hide();
+        $("a.toggle-excerpt").text("show excerpt");
+      });    
+
+- form_for(@post) do |f|
+  %fieldset.wide
+    %label{:for => "title"} title
+    = f.text_field :title, :tabindex => 1
+  %fieldset.wide.excerpt
+    %label{:for => "excerpt"}
+      excerpt
+      %span.help
+        - if @post.excerpt.blank?
+          %a.cancel{:href => "#", :title => "cancel excerpt"}cancel
+        - else
+          %a.cancel{:href => "#", :title => "hide"}hide
+    = f.text_area :excerpt, :class => "post-excerpt wysiwyg", :tabindex => 2
+  %fieldset.wide.body
+    %label{:for => "body"}
+      body
+      %span.help
+        - if @post.excerpt.blank?
+          %a.toggle-excerpt{:href => "#", :title => "add an excerpt to your post"}add an excerpt
+        - else
+          %a.toggle-excerpt{:href => "#", :title => "hide excerpt"}hide excerpt
+    = f.text_area :body, :class => "post-body wysiwyg", :tabindex => 3
+  %fieldset.wide
+    %label{:for => "tag_list"} 
+      tags
+      %span.help comma separated
+    = f.text_field :tag_list, :tabindex => 4
+  - if @post.body?
+    %h3 Originally Posted By
+    %fieldset
+      %label{:for => "author"} name
+      = f.text_field :author, :value => @post.author, :tabindex => 5
+    %fieldset.authoremail
+      %label{:for => "authoremail"} email
+      = f.text_field :authoremail, :value => @post.authoremail, :tabindex => 6
+      %span.help 
+        to display your gravatar.
+        %a{:href => "http://site.gravatar.com/signup", :title => "Get a global avatar at Gravatar"}Create One!
+  - else 
+    %h3 Author
+    %fieldset
+      %label{:for => "author"} name
+      = f.text_field :author, :value => @author, :tabindex => 5
+    %fieldset
+      %label{:for => "authoremail"} email
+      = f.text_field :authoremail, :value => @authoremail, :tabindex => 6
+      %span.help 
+        to display your gravatar.
+        %a{:href => "http://site.gravatar.com/signup", :title => "Get a global avatar at Gravatar"}Create One!
+  %p.form-controls
+    %span.checkbox
+      = check_box("post", "draft")
+      %label{:for => "draft"} draft
+    = f.submit button_name, :tabindex => 7
+    .clear
+    

@@ -1,0 +1,250 @@
+/* === yui library === */
+
+/*Copyright (c) 2006,Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt */
+/*reset.css*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,img {
+  border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,ul {
+  list-style: none;
+}
+caption,th {
+  text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,q:after {
+  content: '';
+}
+abbr,acronym {
+  border: 0;
+}
+/*fonts.css*/
+body{
+  font-size: 13px;
+  font-family: arial,helvetica,clean,sans-serif;
+  *font-size:small;
+  *font:x-small;
+}
+table {
+  font-size: inherit;
+  font: 100%;
+}
+select, input, textarea {
+  font: 99% arial,helvetica,clean,sans-serif;
+}
+pre, code {
+  font: 115% monospace;*font-size:100%;
+}
+body * {
+  line-height: 1.22em;
+}
+/* font-size */
+
+.fs10 {
+  font-size: 77%;
+}
+.fs11 {
+  font-size: 85%;
+}
+.fs12 {
+  font-size: 92%;
+}
+h5,
+h6,
+.fs1,
+.fs13 {
+  font-size: 100%;
+}
+.fs2,
+.fs14 {
+  font-size: 107%;
+}
+.fs3,
+.fs15 {
+  font-size: 114%;
+}
+h4,
+.fs4,
+.fs16 {
+  font-size: 122%;
+}
+h3,
+.fs5,
+.fs17 {
+  font-size: 129%;
+}
+.fs6,
+.fs18 {
+  font-size: 136%;
+}
+h2,
+.fs19 {
+  font-size: 144%;
+}
+.fs20 {
+  font-size: 152%;
+}
+h1,
+.fs21 {
+  font-size: 159%;
+}
+.fs22 {
+  font-size: 167%;
+}
+.fs23 {
+  font-size: 174%;
+}
+.fs24 {
+  font-size: 182%;
+}
+.fs25 {
+  font-size: 189%;
+}
+.fs26 {
+  font-size: 197%;
+}
+/* font family */
+
+.ff_verdana {
+  font-family: verdana;
+}
+.ff_georgia {
+  font-family: georgia;
+}
+/* case */
+
+.caps,
+.uc {
+  text-transform: uppercase;
+}
+.lowercase,
+.lc {
+  text-transform: lowercase;
+}
+/* alignment */
+
+.tar {
+  text-align: right;
+}
+.center,
+.tac {
+  text-align: center;
+}
+/* === equalize === */
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+small {
+  font-size: .85em;
+}
+big {
+  font-size: 1.3em;
+}
+pre, code {
+  font-size: 92%;
+  font-family: monaco, monospace;
+}
+iframe,
+img {
+  border: none;
+  border: 0;
+}
+
+/* --- dropcaps --- */
+
+.dropcap {
+  font-size: 400%;
+  line-height: .85em;
+  display: block;
+  float: left;
+  padding-right: .07em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* --- tagcloud --- */
+
+.tagcloud {
+  text-align: justify;
+}
+.tagcloud a {
+  text-decoration: none;
+}
+.tagcloud a:hover {
+  text-decoration: underline;
+}
+/* === lists === */
+
+ul.inline li {
+  float: left;
+  display: block;
+  margin-right: 1.6em;
+}
+/* indented list of links */
+
+ul.simple li,
+ul.checklist li {
+  margin-left: -3.2em;
+}
+div.simple p {
+  text-indent: -1.75em;
+  padding-left: 2em;
+  margin: 0;
+  line-height: 1.2em;
+}
+/* bullets, bulleted */
+
+ul.square,
+ul.round,
+ul.bulleted,
+ul.circle,
+ol.digit {
+  padding-bottom: .8em;
+  list-style-type: square;
+  margin-left: 1.4em;
+}
+ul.round,
+ul.bulleted {
+  list-style-type: disc;
+}
+ul.circle {
+  list-style-type: circle;
+}
+
+  * html ul.circle {
+    list-style-type: disc;
+  }
+ol.digit {
+  list-style-type: decimal;
+}
+
+/* === clear fix === */
+  
+.clear:after, .post-footer:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .clear {
+  height: 1%;
+}

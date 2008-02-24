@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------
+// Textile Editor Skin 
+// j(Universal?)TagEditor, JQuery plugin
+// By Jay Salvat - http://www.jaysalvat.com/jquery/jtageditor/
+// -------------------------------------------------------------------
+// Icons based on http://www.famfamfam.com/
+// ------------------------------------------------------------------*/
+
+.wysiwyg textarea {
+	clear:both;
+	border:1px solid #ddd;
+	padding: .4em;
+}
+body .container #content form .wysiwyg {
+  padding:0;
+  border:0;
+}
+.wysiwyg .jTagEditor-toolBar {
+  padding-top:.23em;
+  display:none;
+	background-color:#eee;
+  width: 38.5em;
+}
+.wysiwyg .jTagEditor-toolBar span {
+  float:left;
+}
+.wysiwyg .jTagEditor-toolBar a	{
+	display:block;
+	width:16px; height:21px;
+	margin:1px 3px;
+	text-indent:-1000px;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}	
+.wysiwyg .jTagEditor-button1 a	{
+	background-image:url(/images/jtageditor/h2.png);
+}
+.wysiwyg .jTagEditor-button2 a	{
+	background-image:url(/images/jtageditor/h3.png);
+}
+.wysiwyg .jTagEditor-button3 a	{
+	background-image:url(/images/jtageditor/h4.png);
+}
+.wysiwyg .jTagEditor-button4 a	{
+	background-image:url(/images/jtageditor/h5.png);
+}
+.wysiwyg .jTagEditor-button5 a	{
+	background-image:url(/images/jtageditor/h6.png);
+	margin-right:20px;
+}
+.wysiwyg .jTagEditor-button6 a	{
+	background-image:url(/images/jtageditor/picture.png);
+}
+.wysiwyg .jTagEditor-button7 a	{
+	background-image:url(/images/jtageditor/link.png);
+	margin-right:20px;
+}
+.wysiwyg .jTagEditor-button8 a	{
+	background-image:url(/images/jtageditor/bold.png);
+}
+.wysiwyg .jTagEditor-button9 a	{
+	background-image:url(/images/jtageditor/italic.png);
+}
+.wysiwyg .jTagEditor-button10 a	{
+	background-image:url(/images/jtageditor/list-bullets.png);
+}
+.wysiwyg .jTagEditor-button11 a	{
+	background-image:url(/images/jtageditor/list-numbers.png);
+}
+.wysiwyg .jTagEditor-button12 a	{
+	background-image:url(/images/jtageditor/indent.png);
+	margin-right:20px;
+}
+.wysiwyg .jTagEditor-button13 a	{
+	background-image:url(/images/jtageditor/font.png);
+}
+.wysiwyg .jTagEditor-button14 a	{
+	background-image:url(/images/jtageditor/code.png);
+	margin-right:20px;
+}

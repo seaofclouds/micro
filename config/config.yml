@@ -1,0 +1,13 @@
+DEFAULTS: &DEFAULTS
+  name: test
+  pass: test
+  brand: micro
+
+development:
+  <<: *DEFAULTS
+
+test:
+  <<: *DEFAULTS
+  
+production:
+  <<: *DEFAULTS

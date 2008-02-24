@@ -1,0 +1,40 @@
+- div_for(post, :class => "hentry") do
+  - if admin?
+    = render_partial '/posts/admin_menu', nil, :post => post
+  .post-header
+    %h3.entry-title=link_to_unless_current h(post.title), post, :title => "View " + "'" + post.title + "'" 
+    %p.meta.vcard
+      = gravatar_for post.authoremail,20
+      %span.author.fn= h(post.author)
+      \/
+      %span.date
+        %abbr{:class => "published", :title => post.created_at.strftime("%Y-%m-%dT%H:%M:%SZ")}= cascading_date(post.created_at)
+  .post-body.entry-content
+    - if current_page?(:controller => "posts", :action => "index") || current_page?(root_url)
+      - if post.excerpt?
+        = post.excerpt
+        = link_to "Read More", post, :class => "more", :title => "Read More"
+      - else
+        = post.body
+    - else
+      = post.excerpt
+      = post.body
+        
+  .post-footer
+    - unless post.draft?
+      - if post.comments.any?
+        %span.comment-count= link_to_unless_current pluralize(post.comments.count, 'Comment'), post, :title => "View Comments for " + "'" + post.title + "'"
+      - else
+        %span.comment-count= link_to "Leave a Comment", post, :title => "Leave a Comment"
+    - if post.tags.any?
+      %span.tags
+        - tags = post.tags.map { | t | "<a href='/tags/#{t.id}'>#{t.name}</a>" }
+        = tags.join(", ")
+    - unless post.draft?
+      %span.share
+        - @permalink = request.protocol + request.host_with_port + post_path(post)
+        - @permalinkTitle = u(post.title)
+        = link_to("twitter", ("http://twitthis.com/twit?url=" + @permalink + "&amp;title=" + @permalinkTitle)) + ", "
+        = link_to("digg", ("http://digg.com/submit?phase=2&amp;url=" + @permalink + "&amp;title=" + @permalinkTitle)) + ", "
+        = link_to("furl", ("http://www.furl.net/storeIt.jsp?u=" + @permalink + "&amp;t=" + @permalinkTitle)) + ", "
+        = link_to("del.icio.us", ("http://del.icio.us/post?url=" + @permalink + "&amp;title=" + @permalinkTitle))

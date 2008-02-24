@@ -1,0 +1,32 @@
+post_one:
+  title: Announcing micro. Blogware that fits in your pocket. 
+  body: This is my *first* post, which _should_ have some textile usage. "see":http://see.com?
+  author: Bob
+  authoremail: bob@gmail.com
+  draft: false
+  created_at: <%= 9.days.ago.to_s :db %>
+
+post_two:
+  title: Built with Ruby, Rails, and Patience
+  body: No textile here, this is the default, simple body text.
+  author: alice
+  authoremail: micro-alice@mailinator.com
+  draft: false
+  created_at: <%= 22.hours.ago.to_s :db %>
+  
+post_three:
+  title: Formatting Content in Micro
+  excerpt: "!http://farm1.static.flickr.com/62/166978939_35e6416867.jpg!"
+  body: %(dropcap)T% his body text would have been a lot longer, if only i could figure out how. A formatting guide would be nice here.
+  author: Gary
+  draft: false
+  created_at: <%= 3.minutes.ago.to_s :db %>
+
+post_four:
+  title: Importing Data to Micro
+  body: Fixtures would be a nice place to store getting started guides. if only i could figure out how to add more than one line to fixtures.
+  body: First, get yourself a cup of coffee, pour of bourbon, or whatever your poison is, because this might sting a little.
+  author: Alice
+  authoremail: micro-alice@mailinator.com
+  draft: true
+  created_at: <%= 6.minutes.ago.to_s :db %>

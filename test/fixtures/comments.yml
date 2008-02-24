@@ -1,0 +1,18 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+comment_one:
+  post: post_one
+  body: I love this stuff
+  author: tim
+  authorurl: http://tim.com
+  authoremail: micro-tim@mailinator.com
+
+comment_two:
+  post: post_one
+  body: Me too! this is wonderfully lite!
+  author: Joanie
+  
+comment_three:
+  post: post_three
+  body: i *Love* it.
+  author: Bill
+  authoremail: micro-bill@mailinator.com

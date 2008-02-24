@@ -1,0 +1,103 @@
+body .container 
+  :padding-left 10px
+  :padding-right 10px
+  :padding-top 0
+  #header
+    :padding-top 0
+    .logo
+      :font-size 280%
+  #content
+    .admin-overview
+      h2
+        :background-image url(/images/icon-gear.gif)
+        :background-repeat no-repeat
+        :background-position left center
+        :padding-left 25px
+        :padding-bottom .3em
+        :padding-top .3em
+        :margin-bottom .7em
+        :color #777
+      .post
+        :background-image none
+        :background-color transparent
+        :padding 0
+        :font-size 1.3em
+        a
+          :display block
+          :float left
+        .admin
+          :position relative
+          :float left
+          :right 0
+          :padding 0
+          :padding-left 1em
+          :font-size .75em
+          .menu
+            :display inline
+            :background-image none
+            :padding 0
+    .post, .content
+      :padding 10px
+      :margin-bottom 10px
+      .post-header
+        :font-size .9em
+      .post-footer
+        :border-top 1px solid #ddd
+        span
+          :white-space normal
+    .comments .comment, .post .post-body
+      :font-size 1.2em
+    .comments
+      :padding-bottom 20px
+      .comment
+        :padding-bottom 10px
+        .comment-body
+          :padding 10px
+
+// forms
+
+    form
+      h3
+        :padding-top 10px
+      .text
+        :padding 3px
+        :font-size 1.3em
+      fieldset
+        :padding-bottom 10px
+        label
+          :width 40px
+          :padding-right 10px
+          :font-size 1em
+        .text
+          :width 221px
+      fieldset.wide
+        label
+          :padding-bottom 3px
+        .text, textarea
+          :width 275px
+      fieldset.title
+        .text
+          :width 235px
+      textarea
+        :margin-bottom 10px
+        :height 60px
+      textarea.post-body
+        :height 100px
+      fieldset.authoremail .help
+        :display block
+        :padding-left 50px
+        :padding-top 3px
+      textarea.bacon
+        :width 272px
+      textarea.human
+        :width 1px
+        :background-color transparent
+        :border-color transparent
+      .form-controls
+        :padding-top 10px
+    
+p.copyright
+  :text-align center
+
+// admin
+

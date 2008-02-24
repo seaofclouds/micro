@@ -1,0 +1,37 @@
+%h2#leaveacomment= form_name  
+
+- if @comment.errors.any?
+  = error_messages_for :comment, :message => nil
+
+- form_for([@post, @comment]) do |f|
+  = f.text_area :body, :class => "human", :value => "", :style =>"width:0; height:0; padding:0", :tabindex => -1
+  = f.text_area :bacon, :value => @comment.body(:source), :class => "bacon", :tabindex => 2
+  - if @comment.author?
+    %fieldset
+      %label{:for => "author"} name
+      = f.text_field :author, :value => @comment.author, :tabindex => 3
+    %fieldset.authoremail
+      %label{:for => "authoremail"} email
+      = f.text_field :authoremail, :value => @comment.authoremail, :tabindex => 4
+      %span.help 
+        to display your gravatar.
+        %a{:href => "http://site.gravatar.com/signup", :title => "Get a global avatar at Gravatar"}Create One!
+    %fieldset
+      %label{:for => "authorurl"} url
+      = f.text_field :authorurl, :value => @comment.authorurl, :tabindex => 5
+  - else
+    %fieldset
+      %label{:for => "author"} name
+      = f.text_field :author, :value => @author, :tabindex => 3
+    %fieldset.authoremail
+      %label{:for => "authoremail"} email
+      = f.text_field :authoremail, :value => @authoremail, :tabindex => 4
+      %span.help 
+        to display your gravatar.
+        %a{:href => "http://site.gravatar.com/signup", :title => "Get a global avatar at Gravatar"}Create One!
+    %fieldset
+      %label{:for => "authorurl"} url
+      = f.text_field :authorurl, :value => @authorurl, :tabindex => 5
+      
+  %p.form-controls
+    = f.submit button_name, :tabindex => 6

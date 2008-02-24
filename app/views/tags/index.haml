@@ -1,0 +1,5 @@
+.content
+  %h2 tags
+  .tagcloud
+    - tag_cloud @tags, %w(tc1 tc2 tc3 tc4) do |tag, css_class|
+      %a{:href => ("/tags/" + tag.id.to_s), :class => css_class}= tag.name

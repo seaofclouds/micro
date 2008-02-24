@@ -1,0 +1,285 @@
+!light = #ddd
+!mid = #777
+!dark = #444
+
+!light_complement = #97B9D3
+!mid_complement = #59829B
+!dark_complement = #3B5667
+
+body
+  :background-color = !dark
+  .container
+    :padding-left 1.1em
+    :padding-right 1.1em
+    :background-color = !mid
+    :color = !dark
+    :background-image url(/images/bg-777-444.gif)
+    :background-repeat repeat-x
+    :background-position center bottom
+    a
+      :color = !dark_complement
+    .flash
+      :background-color #fff
+      :padding 1em
+      :width 24em
+      :margin 0 auto
+    #header
+      .logo
+        :font-size 320%
+        :font-weight bold
+        a
+          :text-decoration none
+          :color #fff
+    #footer
+      :padding-top 3em
+      :padding-bottom 1em
+      :color #fff
+      :font-size 85%
+      :font-family verdana, sans-serif
+      a
+        :color #fff
+      .backtotop
+        :text-align right
+        :display block
+        :float right
+        :clear both
+        :background-image url(/images/arrow-up-white.gif)
+        :background-repeat no-repeat
+        :background-position right center
+        :padding-right 20px
+        :text-transform uppercase
+        :font-size 95%
+        :font-weight bold
+        :text-decoration none
+    #content
+      .post, .content
+        :padding 1em
+        :background-color #fff
+        :margin-bottom 1em
+        :position relative
+        :background-image url(/images/bg-eee-fff.gif)
+        :background-repeat repeat-x
+        :background-position center top
+        h2
+          :font-size 100%
+          :text-transform uppercase
+          :font-weight bold
+          :color = !dark
+          :padding-bottom 1em
+          em
+            :font-style normal
+            :font-weight normal
+        .post-header
+          :padding-bottom 1em
+          h3
+            :font-size 200%
+            a
+              :text-decoration none
+              :color = !dark
+            a:hover
+              :text-decoration underline
+          .meta
+            :color = !mid
+            :text-transform uppercase
+            :line-height 20px
+            a 
+              :text-decoration none
+              :color = !mid
+            a:hover
+              :text-decoration underline
+            .author
+              :color = !dark
+            img
+              :float left
+              :padding-right .5em
+        .post-body
+          // post content formatting
+          p, ul, ol, h1, h2, h3, h4, h5, h6
+            :padding-bottom 1em
+          .more
+            :display block
+            :padding-right 20px
+            :padding-top .5em
+            :padding-bottom .5em
+            :margin-bottom 1em
+            :background-image url(/images/icon-next.gif)
+            :background-repeat no-repeat
+            :background-position right center
+            :text-align right
+            :text-decoration none
+            :font-weight bold
+            :font-family verdana, sans-serif
+            :font-size 85%
+            :color #999
+          a.more:hover
+            :color #777
+            :text-decoration underline
+        .post-footer
+          :padding-top .5em
+          :border-top 2px dotted #ccc
+          :font-family verdana, sans-serif
+          :color = !mid
+          :font-size 85%          
+          span
+            :background-repeat no-repeat
+            :background-position left center
+            :padding-right 1em
+            :padding-top .2em
+            :padding-bottom .2em
+            :white-space nowrap
+          .comment-count
+            :background-image url(/images/icon-comment.gif)
+            :padding-left 20px
+          .share
+            :background-image url(/images/icon-add.gif)
+            :padding-left 20px
+          .tags
+            :background-image url(/images/icon-tag.gif)
+            :padding-left 20px
+      .previous-posts
+        .post
+          :padding 0
+          :background-image none
+          :background-color transparent
+          :margin-bottom 0
+          .post-header
+            :padding-bottom .6em
+            h4
+              :font-size 160%
+              a
+                :color = !dark
+                :text-decoration none
+              a:hover
+                :text-decoration underline
+      .comments
+        :padding-bottom 2em
+        h2
+          :float left
+        .leaveacommentbutton
+          :float right
+          :text-decoration underline
+          :color #999
+          :cursor pointer
+        .comment
+          :padding-bottom 1em
+          :clear both
+          :position relative
+          .comment-body
+            :background-color #ddd
+            :padding 1em
+          .comment-footer
+            :background-image url(/images/comment_quote.gif)
+            :background-repeat no-repeat
+            :background-position 50px 0
+            :padding-top 10px
+            :padding-left 10px
+            :color #777
+            .author
+              :font-size 120%
+      .post, .comment
+        .caption
+          :font-family verdana, sans-serif
+          :font-size 85%
+          :color = !mid
+          a
+            :color = !mid
+      form
+        .help
+          :font-size 85%
+          :color #777
+        h3
+          :padding-bottom 1em
+          :text-transform uppercase
+          :font-weight bold
+          :font-size 85%
+          :padding-top 1em
+          :color = !mid
+        .text
+          :border-color = !light
+          :border-width 1px
+          :border-style solid
+          :padding .4em
+          :color = !dark
+        fieldset
+          :padding-bottom 1em
+          label
+            :float left
+            :display block
+            :width 3em
+            :padding-right 1em
+            :text-align right
+            :color = !mid
+          textarea
+            :width 33.5em
+            :float left
+            :margin-bottom 0
+        fieldset.wide
+          label
+            :float none
+            :width auto
+            :padding-right 0
+            :padding-bottom .3em
+            :text-align left
+          .text, textarea
+            :float none
+            :width 38em
+        fieldset.title
+          .text
+            :width 33.5em
+        textarea
+          :margin-bottom 1em
+          :height 8em
+        textarea.human
+          :height 1px
+          :width 1px
+          :border none
+          :padding 0
+          :margin 0
+        textarea.post-body
+          :height 20em
+        .active
+          :border 1px solid #999
+      .form-controls
+        :padding-top 1em
+        :text-align right
+        .submit
+          :border none
+          :background-color = !mid
+          :color #fff
+          :text-transform uppercase
+          :font-weight bold
+          :padding .4em
+          :cursor pointer
+          :text-decoration none
+        .submit:hover
+          :background-color #999
+        span.checkbox
+          :padding-right 1em
+      form.edit_post
+        p.meta
+          :padding-bottom 1em
+      #errorExplanation
+        :padding 0 1em 1.5em 1em
+        :color #777
+        h2
+          :text-transform none
+          :font-size 110%
+          :color #777
+          :padding-bottom .5em
+        ul
+          :list-style-type square
+          li
+            :margin-left 1.2em
+      .tagcloud
+        a
+          :padding-right 10px
+        .tc5
+          :font-size 200%
+        .tc4
+          :font-size 170%
+        .tc3
+          :font-size 150%
+        .tc2
+          :font-size 120%
+        .tc1
+          :font-size 95%

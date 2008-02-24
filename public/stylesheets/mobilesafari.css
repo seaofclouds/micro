@@ -1,0 +1,92 @@
+body .container {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0; }
+  body .container #header {
+    padding-top: 0; }
+    body .container #header .logo {
+      font-size: 280%; }
+  body .container #content .admin-overview h2 {
+    background-image: url(/images/icon-gear.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+    padding-bottom: .3em;
+    padding-top: .3em;
+    margin-bottom: .7em;
+    color: #777; }
+  body .container #content .admin-overview .post {
+    background-image: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.3em; }
+    body .container #content .admin-overview .post a {
+      display: block;
+      float: left; }
+    body .container #content .admin-overview .post .admin {
+      position: relative;
+      float: left;
+      right: 0;
+      padding: 0;
+      padding-left: 1em;
+      font-size: .75em; }
+      body .container #content .admin-overview .post .admin .menu {
+        display: inline;
+        background-image: none;
+        padding: 0; }
+  body .container #content .post, body .container #content .content {
+    padding: 10px;
+    margin-bottom: 10px; }
+    body .container #content .post .post-header, body .container #content .content .post-header {
+      font-size: .9em; }
+    body .container #content .post .post-footer, body .container #content .content .post-footer {
+      border-top: 1px solid #ddd; }
+      body .container #content .post .post-footer span, body .container #content .content .post-footer span {
+        white-space: normal; }
+  body .container #content .comments .comment, body .container #content .post .post-body {
+    font-size: 1.2em; }
+  body .container #content .comments {
+    padding-bottom: 20px; }
+    body .container #content .comments .comment {
+      padding-bottom: 10px; }
+      body .container #content .comments .comment .comment-body {
+        padding: 10px; }
+  body .container #content form h3 {
+    padding-top: 10px; }
+  body .container #content form .text {
+    padding: 3px;
+    font-size: 1.3em; }
+  body .container #content form fieldset {
+    padding-bottom: 10px; }
+    body .container #content form fieldset label {
+      width: 40px;
+      padding-right: 10px;
+      font-size: 1em; }
+    body .container #content form fieldset .text {
+      width: 221px; }
+  body .container #content form fieldset.wide label {
+    padding-bottom: 3px; }
+  body .container #content form fieldset.wide .text, body .container #content form fieldset.wide textarea {
+    width: 275px; }
+  body .container #content form fieldset.title .text {
+    width: 235px; }
+  body .container #content form textarea {
+    margin-bottom: 10px;
+    height: 60px; }
+  body .container #content form textarea.post-body {
+    height: 100px; }
+  body .container #content form fieldset.authoremail .help {
+    display: block;
+    padding-left: 50px;
+    padding-top: 3px; }
+  body .container #content form textarea.bacon {
+    width: 272px; }
+  body .container #content form textarea.human {
+    width: 1px;
+    background-color: transparent;
+    border-color: transparent; }
+  body .container #content form .form-controls {
+    padding-top: 10px; }
+
+p.copyright {
+  text-align: center; }

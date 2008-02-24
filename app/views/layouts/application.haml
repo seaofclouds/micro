@@ -1,0 +1,55 @@
+!!! XML
+!!!
+%html
+  %head
+    %title= title 
+    %link{:href => formatted_posts_url(:atom), :rel => "alternate", :title => title, :type => "application/atom+xml"}/
+    %link{:rel => "Shortcut Icon", :href => "/images/logo-favicon.ico"}/
+    - if mobile_safari?
+      %meta{:name => "viewport", :content => "width = device-width, initial-scale = 1.0"}/
+      %link{:rel => "apple-touch-icon", :href => "/images/logo-appletouch.png"}/
+    = stylesheet_link_tag "reset"
+    = stylesheet_link_tag "application"
+    - if mobile_safari?
+      = stylesheet_link_tag "mobilesafari"
+    - else
+      = stylesheet_link_tag "screen"
+      = yield :head_style
+    - if admin?
+      = stylesheet_link_tag "admin"
+
+    = javascript_include_tag "jquery-1.2.2.min.js"
+    = javascript_include_tag "cookie"
+    = javascript_include_tag "application" if !mobile_safari?
+    = javascript_include_tag "mobilesafari" if mobile_safari?
+    = javascript_include_tag "admin" if admin?
+    
+    = yield :head_javascript
+    - if yield :head_javascript_inline
+      %script{:type => "text/javascript"}
+        :plain
+          $(document).ready(function(){
+        = yield :head_javascript_inline
+        :plain
+          });
+
+  %body{body_id_and_class}    
+    .container
+      - if admin?
+        = render_partial '/shared/admin_menu'
+      - if !flash.blank?
+        .flash= flash[:notice]
+      #header
+        - if current_page?(root_url)
+          %h1.logo
+            %a{:href => "/"}= APP_CONFIG['brand'] 
+        - else
+          %h5.logo
+            %a{:href => "/"}= APP_CONFIG['brand']               
+        = yield :breadcrumbs
+      #content
+        = yield :layout
+      #footer
+        - unless mobile_safari?
+          %a.backtotop{:title => "back to top", :href => "#header"} back to top
+        %p.copyright <a href="http://micro.seaofclouds.com">micro</a> blog and theme by <a href="http://www.seaofclouds.com">seaofclouds</a>

@@ -1,0 +1,266 @@
+body {
+  background-color: #444444; }
+  body .container {
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    background-color: #777777;
+    color: #444444;
+    background-image: url(/images/bg-777-444.gif);
+    background-repeat: repeat-x;
+    background-position: center bottom; }
+    body .container a {
+      color: #3b5667; }
+    body .container .flash {
+      background-color: #fff;
+      padding: 1em;
+      width: 24em;
+      margin: 0 auto; }
+    body .container #header .logo {
+      font-size: 320%;
+      font-weight: bold; }
+      body .container #header .logo a {
+        text-decoration: none;
+        color: #fff; }
+    body .container #footer {
+      padding-top: 3em;
+      padding-bottom: 1em;
+      color: #fff;
+      font-size: 85%;
+      font-family: verdana, sans-serif; }
+      body .container #footer a {
+        color: #fff; }
+      body .container #footer .backtotop {
+        text-align: right;
+        display: block;
+        float: right;
+        clear: both;
+        background-image: url(/images/arrow-up-white.gif);
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+        text-transform: uppercase;
+        font-size: 95%;
+        font-weight: bold;
+        text-decoration: none; }
+    body .container #content .post, body .container #content .content {
+      padding: 1em;
+      background-color: #fff;
+      margin-bottom: 1em;
+      position: relative;
+      background-image: url(/images/bg-eee-fff.gif);
+      background-repeat: repeat-x;
+      background-position: center top; }
+      body .container #content .post h2, body .container #content .content h2 {
+        font-size: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #444444;
+        padding-bottom: 1em; }
+        body .container #content .post h2 em, body .container #content .content h2 em {
+          font-style: normal;
+          font-weight: normal; }
+      body .container #content .post .post-header, body .container #content .content .post-header {
+        padding-bottom: 1em; }
+        body .container #content .post .post-header h3, body .container #content .content .post-header h3 {
+          font-size: 200%; }
+          body .container #content .post .post-header h3 a, body .container #content .content .post-header h3 a {
+            text-decoration: none;
+            color: #444444; }
+          body .container #content .post .post-header h3 a:hover, body .container #content .content .post-header h3 a:hover {
+            text-decoration: underline; }
+        body .container #content .post .post-header .meta, body .container #content .content .post-header .meta {
+          color: #777777;
+          text-transform: uppercase;
+          line-height: 20px; }
+          body .container #content .post .post-header .meta a, body .container #content .content .post-header .meta a {
+            text-decoration: none;
+            color: #777777; }
+          body .container #content .post .post-header .meta a:hover, body .container #content .content .post-header .meta a:hover {
+            text-decoration: underline; }
+          body .container #content .post .post-header .meta .author, body .container #content .content .post-header .meta .author {
+            color: #444444; }
+          body .container #content .post .post-header .meta img, body .container #content .content .post-header .meta img {
+            float: left;
+            padding-right: .5em; }
+      body .container #content .post .post-body p, body .container #content .post .post-body ul, body .container #content .post .post-body ol, body .container #content .post .post-body h1, body .container #content .post .post-body h2, body .container #content .post .post-body h3, body .container #content .post .post-body h4, body .container #content .post .post-body h5, body .container #content .post .post-body h6, body .container #content .content .post-body p, body .container #content .content .post-body ul, body .container #content .content .post-body ol, body .container #content .content .post-body h1, body .container #content .content .post-body h2, body .container #content .content .post-body h3, body .container #content .content .post-body h4, body .container #content .content .post-body h5, body .container #content .content .post-body h6 {
+        padding-bottom: 1em; }
+      body .container #content .post .post-body .more, body .container #content .content .post-body .more {
+        display: block;
+        padding-right: 20px;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-bottom: 1em;
+        background-image: url(/images/icon-next.gif);
+        background-repeat: no-repeat;
+        background-position: right center;
+        text-align: right;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: verdana, sans-serif;
+        font-size: 85%;
+        color: #999; }
+      body .container #content .post .post-body a.more:hover, body .container #content .content .post-body a.more:hover {
+        color: #777;
+        text-decoration: underline; }
+      body .container #content .post .post-footer, body .container #content .content .post-footer {
+        padding-top: .5em;
+        border-top: 2px dotted #ccc;
+        font-family: verdana, sans-serif;
+        color: #777777;
+        font-size: 85%; }
+        body .container #content .post .post-footer span, body .container #content .content .post-footer span {
+          background-repeat: no-repeat;
+          background-position: left center;
+          padding-right: 1em;
+          padding-top: .2em;
+          padding-bottom: .2em;
+          white-space: nowrap; }
+        body .container #content .post .post-footer .comment-count, body .container #content .content .post-footer .comment-count {
+          background-image: url(/images/icon-comment.gif);
+          padding-left: 20px; }
+        body .container #content .post .post-footer .share, body .container #content .content .post-footer .share {
+          background-image: url(/images/icon-add.gif);
+          padding-left: 20px; }
+        body .container #content .post .post-footer .tags, body .container #content .content .post-footer .tags {
+          background-image: url(/images/icon-tag.gif);
+          padding-left: 20px; }
+    body .container #content .previous-posts .post {
+      padding: 0;
+      background-image: none;
+      background-color: transparent;
+      margin-bottom: 0; }
+      body .container #content .previous-posts .post .post-header {
+        padding-bottom: .6em; }
+        body .container #content .previous-posts .post .post-header h4 {
+          font-size: 160%; }
+          body .container #content .previous-posts .post .post-header h4 a {
+            color: #444444;
+            text-decoration: none; }
+          body .container #content .previous-posts .post .post-header h4 a:hover {
+            text-decoration: underline; }
+    body .container #content .comments {
+      padding-bottom: 2em; }
+      body .container #content .comments h2 {
+        float: left; }
+      body .container #content .comments .leaveacommentbutton {
+        float: right;
+        text-decoration: underline;
+        color: #999;
+        cursor: pointer; }
+      body .container #content .comments .comment {
+        padding-bottom: 1em;
+        clear: both;
+        position: relative; }
+        body .container #content .comments .comment .comment-body {
+          background-color: #ddd;
+          padding: 1em; }
+        body .container #content .comments .comment .comment-footer {
+          background-image: url(/images/comment_quote.gif);
+          background-repeat: no-repeat;
+          background-position: 50px 0;
+          padding-top: 10px;
+          padding-left: 10px;
+          color: #777; }
+          body .container #content .comments .comment .comment-footer .author {
+            font-size: 120%; }
+    body .container #content .post .caption, body .container #content .comment .caption {
+      font-family: verdana, sans-serif;
+      font-size: 85%;
+      color: #777777; }
+      body .container #content .post .caption a, body .container #content .comment .caption a {
+        color: #777777; }
+    body .container #content form .help {
+      font-size: 85%;
+      color: #777; }
+    body .container #content form h3 {
+      padding-bottom: 1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 85%;
+      padding-top: 1em;
+      color: #777777; }
+    body .container #content form .text {
+      border-color: #dddddd;
+      border-width: 1px;
+      border-style: solid;
+      padding: .4em;
+      color: #444444; }
+    body .container #content form fieldset {
+      padding-bottom: 1em; }
+      body .container #content form fieldset label {
+        float: left;
+        display: block;
+        width: 3em;
+        padding-right: 1em;
+        text-align: right;
+        color: #777777; }
+      body .container #content form fieldset textarea {
+        width: 33.5em;
+        float: left;
+        margin-bottom: 0; }
+    body .container #content form fieldset.wide label {
+      float: none;
+      width: auto;
+      padding-right: 0;
+      padding-bottom: .3em;
+      text-align: left; }
+    body .container #content form fieldset.wide .text, body .container #content form fieldset.wide textarea {
+      float: none;
+      width: 38em; }
+    body .container #content form fieldset.title .text {
+      width: 33.5em; }
+    body .container #content form textarea {
+      margin-bottom: 1em;
+      height: 8em; }
+    body .container #content form textarea.human {
+      height: 1px;
+      width: 1px;
+      border: none;
+      padding: 0;
+      margin: 0; }
+    body .container #content form textarea.post-body {
+      height: 20em; }
+    body .container #content form .active {
+      border: 1px solid #999; }
+    body .container #content .form-controls {
+      padding-top: 1em;
+      text-align: right; }
+      body .container #content .form-controls .submit {
+        border: none;
+        background-color: #777777;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: .4em;
+        cursor: pointer;
+        text-decoration: none; }
+      body .container #content .form-controls .submit:hover {
+        background-color: #999; }
+      body .container #content .form-controls span.checkbox {
+        padding-right: 1em; }
+    body .container #content form.edit_post p.meta {
+      padding-bottom: 1em; }
+    body .container #content #errorExplanation {
+      padding: 0 1em 1.5em 1em;
+      color: #777; }
+      body .container #content #errorExplanation h2 {
+        text-transform: none;
+        font-size: 110%;
+        color: #777;
+        padding-bottom: .5em; }
+      body .container #content #errorExplanation ul {
+        list-style-type: square; }
+        body .container #content #errorExplanation ul li {
+          margin-left: 1.2em; }
+    body .container #content .tagcloud a {
+      padding-right: 10px; }
+    body .container #content .tagcloud .tc5 {
+      font-size: 200%; }
+    body .container #content .tagcloud .tc4 {
+      font-size: 170%; }
+    body .container #content .tagcloud .tc3 {
+      font-size: 150%; }
+    body .container #content .tagcloud .tc2 {
+      font-size: 120%; }
+    body .container #content .tagcloud .tc1 {
+      font-size: 95%; }

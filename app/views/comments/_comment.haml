@@ -1,0 +1,18 @@
+- div_for(comment) do
+  - if admin?
+    .admin
+      .menu
+        %span.edit= link_to 'Edit', [:edit, @post, comment], :title => "Edit Comment"
+        %span.delete= link_to 'Destroy', [@post, comment], :confirm => 'Are you sure?', :method => :delete, :title => "Delete Comment"
+        .clear
+  .comment-body
+    = comment.body
+  .comment-footer
+    %p.meta.vcard
+      = gravatar_for comment.authoremail,30
+      %span.author.fn
+        - if comment.authorurl.blank?
+          = h(comment.author)
+        - else
+          %a{:href => comment.authorurl, :title => "Visit " + comment.authorurl, :class => "url"}= h(comment.author)
+      %span.date= cascading_date(comment.created_at)

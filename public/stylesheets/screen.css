@@ -1,0 +1,9 @@
+body {
+  text-align: center; }
+  body .container {
+    text-align: left;
+    width: 40.5em;
+    margin: auto;
+    min-width: 526px; }
+    body .container form textarea.text {
+      width: 37.9em; }

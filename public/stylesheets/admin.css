@@ -1,0 +1,134 @@
+body .container #admin {
+  position: relative; }
+  body .container #admin .menu {
+    background-color: #fff;
+    padding: 1em; }
+    body .container #admin .menu .drafts {
+      margin-left: 3%; }
+    body .container #admin .menu .recentcomments, body .container #admin .menu .drafts {
+      float: left;
+      width: 48%; }
+      body .container #admin .menu .recentcomments h2, body .container #admin .menu .drafts h2 {
+        font-size: 85%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #777;
+        padding-bottom: .5em; }
+      body .container #admin .menu .recentcomments .item, body .container #admin .menu .drafts .item {
+        padding: .2em; }
+        body .container #admin .menu .recentcomments .item a.view, body .container #admin .menu .drafts .item a.view {
+          display: block;
+          float: left; }
+        body .container #admin .menu .recentcomments .item .admin, body .container #admin .menu .drafts .item .admin {
+          padding: 0;
+          float: right;
+          font-size: 85%;
+          font-weight: bold;
+          text-transform: uppercase;
+          width: 5em;
+          background-color: transparent; }
+          body .container #admin .menu .recentcomments .item .admin .menu, body .container #admin .menu .drafts .item .admin .menu {
+            padding: 0;
+            float: right;
+            background-color: transparent; }
+            body .container #admin .menu .recentcomments .item .admin .menu a, body .container #admin .menu .drafts .item .admin .menu a {
+              text-decoration: none;
+              color: #777; }
+            body .container #admin .menu .recentcomments .item .admin .menu span, body .container #admin .menu .drafts .item .admin .menu span {
+              display: block;
+              float: left; }
+            body .container #admin .menu .recentcomments .item .admin .menu span.delete, body .container #admin .menu .drafts .item .admin .menu span.delete {
+              position: relative;
+              background-image: url(/images/icon-trash-grey.png);
+              background-repeat: no-repeat;
+              background-position: left center;
+              text-indent: 100px;
+              width: 15px;
+              margin-left: .5em;
+              overflow: hidden; }
+              body .container #admin .menu .recentcomments .item .admin .menu span.delete a, body .container #admin .menu .drafts .item .admin .menu span.delete a {
+                display: block;
+                line-height: 15px; }
+      body .container #admin .menu .recentcomments .item:hover, body .container #admin .menu .drafts .item:hover {
+        background-color: #eee; }
+        body .container #admin .menu .recentcomments .item:hover a, body .container #admin .menu .drafts .item:hover a {
+          color: #333; }
+    body .container #admin .menu .menu-footer {
+      padding-top: 1em;
+      border-top: 2px dotted #ccc; }
+      body .container #admin .menu .menu-footer a {
+        padding-right: 1em;
+        color: #777;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 85%;
+        font-weight: bold; }
+      body .container #admin .menu .menu-footer a:hover {
+        color: #555;
+        cursor: pointer; }
+  body .container #admin .tab {
+    display: block;
+    position: absolute;
+    bottom: -1.7em;
+    right: 0;
+    background-image: url(/images/admin-tab-white.png);
+    background-position: top left;
+    padding: .4em .4em .4em 2em; }
+    body .container #admin .tab a {
+      background-image: url(/images/icon-gear.gif);
+      background-repeat: no-repeat;
+      background-position: left center;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-left: 20px;
+      padding-top: .3em;
+      padding-bottom: .3em;
+      font-size: 85%;
+      text-decoration: none;
+      color: #777;
+      cursor: pointer; }
+body .container #content .post .admin, body .container #content .content .admin {
+  font-size: 85%;
+  right: 0;
+  top: 0;
+  position: absolute; }
+  body .container #content .post .admin .menu, body .container #content .content .admin .menu {
+    background-image: url(/images/admin-tab-grey.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    top: 0;
+    padding: .2em 0 .4em 2.3em;
+    text-align: right;
+    width: 5em; }
+    body .container #content .post .admin .menu a, body .container #content .content .admin .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase; }
+    body .container #content .post .admin .menu span, body .container #content .content .admin .menu span {
+      display: block;
+      float: left; }
+    body .container #content .post .admin .menu span.delete, body .container #content .content .admin .menu span.delete {
+      position: relative;
+      background-image: url(/images/icon-trash-white.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      text-indent: 100px;
+      width: 15px;
+      margin-left: .5em;
+      overflow: hidden; }
+      body .container #content .post .admin .menu span.delete a, body .container #content .content .admin .menu span.delete a {
+        display: block;
+        line-height: 15px; }
+body .container #content .previous-posts .post .admin {
+  right: -1.2em;
+  background-color: #fff; }
+  body .container #content .previous-posts .post .admin .menu {
+    background-image: url(/images/admin-arrow.png);
+    background-position: left center; }
+body .container #content .comments .comment .admin .menu {
+  background-image: url(/images/admin-tab-white.png); }
+  body .container #content .comments .comment .admin .menu a {
+    color: #777; }
+  body .container #content .comments .comment .admin .menu span.delete {
+    background-image: url(/images/icon-trash-grey.png); }

@@ -1,0 +1,24 @@
+- if @posts.any?
+  .hfeed
+    = render :partial => '/posts/post', :collection => @latestposts
+
+    - if @olderposts.any?
+      .content.previous-posts
+        %h2 Previous Posts
+        - for post in @olderposts do
+          - div_for(post, :class => "hentry") do
+            - if admin?
+              = render_partial '/posts/admin_menu', nil, :post => post
+            .post-header
+              %h4.entry-title=link_to h(post.title), post, :title => "View " + "'" + post.title + "'" 
+              %p.meta.vcard
+                %span.author.fn= h(post.author)
+                \/
+                %span.date
+                  %abbr{:class => "published", :title => post.created_at.strftime("%Y-%m-%dT%H:%M:%SZ")}= cascading_date(post.created_at)
+- else
+  .content
+    %h1 This blog's so fresh, there aren't any posts yet!
+    - if admin?
+      .form-controls
+        = link_to "Create One", {new_post_path, post}, :class => "submit"

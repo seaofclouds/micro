@@ -1,0 +1,18 @@
+- @title = "tagged with &raquo; " + @tag.name
+
+.content.previous-posts
+  %h2 
+    tagged with
+    %em= @tag.name
+  - @posts.each do |post|
+    - div_for(post) do
+      - if admin?
+        .admin
+          %p.edit=link_to 'edit', edit_post_path(post), :title => "Edit this post"
+          %p.delete= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this post"
+      .post-header
+        %h4=link_to h(post.title), post, :title => "View " + "'" + post.title + "'" 
+        %p.meta
+          %span.author= h(post.author)
+          \/
+          %span.date= cascading_date(post.created_at)

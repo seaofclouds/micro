@@ -1,0 +1,6 @@
+- @title = @post.title
+
+= render :partial => '/posts/post'
+
+.content
+  = render :partial => "/comments/commentform", :locals => { :button_name => "Update Comment", :form_name => "Editing comment"}

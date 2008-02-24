@@ -1,0 +1,22 @@
+# Logfile created on Sun Feb 24 08:35:30 -0800 2008
+
+Processing PostsController#index (for 127.0.0.1 at 2008-02-24 08:35:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjIyNzdhM2IxMDVhODU5NTEwYWQ4OWQyZjAyY2Yy%0AMjciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--3f0aeec655d2612315e09fd57458a4fe986e6237
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.001345)[0m   [0;1mSELECT * FROM posts WHERE (posts."draft" = 'f') ORDER BY created_at DESC[0m
+  [4;35;1mPost Load (0.000500)[0m   [0mSELECT * FROM posts WHERE (posts."draft" = 't') ORDER BY created_at DESC[0m
+  [4;36;1mPost Load (0.000662)[0m   [0;1mSELECT * FROM posts WHERE (posts."draft" = 'f') ORDER BY created_at DESC LIMIT 10[0m
+  [4;35;1mComment Load (0.000976)[0m   [0mSELECT * FROM comments ORDER BY created_at DESC LIMIT 10[0m
+  [4;36;1mPost Load (0.000556)[0m   [0;1mSELECT * FROM posts WHERE (posts."draft" = 'f') ORDER BY created_at DESC LIMIT 12 OFFSET 2[0m
+  [4;35;1mPost Load (0.000594)[0m   [0mSELECT * FROM posts WHERE (posts."draft" = 'f') ORDER BY created_at DESC LIMIT 2[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT count(*) AS count_all FROM comments WHERE (comments.post_id = 130049073) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT count(*) AS count_all FROM comments WHERE (comments.post_id = 130049073) [0m
+  [4;36;1mTag Load (0.000190)[0m   [0;1mSELECT tags.* FROM tags INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((taggings.taggable_type = 'Post') AND (taggings.taggable_id = 130049073)) [0m
+Rendered /posts/_post (0.01620)
+  [4;35;1mSQL (0.000197)[0m   [0mSELECT count(*) AS count_all FROM comments WHERE (comments.post_id = 226779025) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM comments WHERE (comments.post_id = 226779025) [0m
+  [4;35;1mTag Load (0.000121)[0m   [0mSELECT tags.* FROM tags INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((taggings.taggable_type = 'Post') AND (taggings.taggable_id = 226779025)) [0m
+Rendered /posts/_post (0.00275)
+Completed in 0.04262 (23 reqs/sec) | Rendering: 0.02655 (62%) | DB: 0.00537 (12%) | 200 OK [http://localhost/]
