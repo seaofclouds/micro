@@ -139,7 +139,8 @@ body {
           body .container #content .previous-posts .post .post-header h4 a:hover {
             text-decoration: underline; }
     body .container #content .comments {
-      padding-bottom: 2em; }
+      padding-bottom: 2em;
+      clear: both; }
       body .container #content .comments h2 {
         float: left; }
       body .container #content .comments .leaveacommentbutton {
@@ -149,8 +150,8 @@ body {
         cursor: pointer; }
       body .container #content .comments .comment {
         padding-bottom: 1em;
-        clear: both;
-        position: relative; }
+        position: relative;
+        clear: both; }
         body .container #content .comments .comment .comment-body {
           background-color: #ddd;
           padding: 1em; }
@@ -160,7 +161,8 @@ body {
           background-position: 50px 0;
           padding-top: 10px;
           padding-left: 10px;
-          color: #777; }
+          color: #777;
+          clear: both; }
           body .container #content .comments .comment .comment-footer .author {
             font-size: 120%; }
     body .container #content .post .caption, body .container #content .comment .caption {
