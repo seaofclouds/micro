@@ -1,0 +1,9 @@
+body .container {
+  width: 39.5em;
+  min-width: 526px; }
+  body .container form textarea.text {
+    width: 36.9em; }
+  body .container #admin .item {
+    line-height: 1%; }
+  body .container #content .comments .comment {
+    clear: both; }
