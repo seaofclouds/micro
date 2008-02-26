@@ -114,6 +114,47 @@ body
           a.more:hover
             :color #777
             :text-decoration underline
+          // textile and post content style
+          h2
+            :text-transform none
+            :font-size 144%
+            :font-weight normal
+          ul
+            :list-style-type square
+            :margin-left 1.4em
+          ol
+            :list-style-type decimal
+            :margin-left 1.6em
+          blockquote
+            :border-left 5px solid #ccc
+            :padding-left 1em
+            :margin-bottom 1em
+            p
+              :padding-bottom 0
+              :padding-top 1em
+          blockquote :first-child
+            :padding-top 0
+          table
+            :border 1px solid #ccc
+            :margin-bottom 1em
+            th
+              :font-size 85%
+            td, th
+              :padding .4em
+            tr
+              :border-bottom 1px solid #ccc
+          pre
+            :letter-spacing .1em
+            :margin-bottom 1em
+            :overflow hidden
+            code
+              :display block
+              :padding 1em
+              :font-size 100%
+              :background-color = !dark
+              :color #fff
+          pre:hover
+            :overflow visible
         .post-footer
           :padding-top .5em
           :border-top 2px dotted #ccc

@@ -102,6 +102,46 @@ body {
       body .container #content .post .post-body a.more:hover, body .container #content .content .post-body a.more:hover {
         color: #777;
         text-decoration: underline; }
+      body .container #content .post .post-body h2, body .container #content .content .post-body h2 {
+        text-transform: none;
+        font-size: 144%;
+        font-weight: normal; }
+      body .container #content .post .post-body ul, body .container #content .content .post-body ul {
+        list-style-type: square;
+        margin-left: 1.4em; }
+      body .container #content .post .post-body ol, body .container #content .content .post-body ol {
+        list-style-type: decimal;
+        margin-left: 1.6em; }
+      body .container #content .post .post-body blockquote, body .container #content .content .post-body blockquote {
+        border-left: 5px solid #ccc;
+        padding-left: 1em;
+        margin-bottom: 1em; }
+        body .container #content .post .post-body blockquote p, body .container #content .content .post-body blockquote p {
+          padding-bottom: 0;
+          padding-top: 1em; }
+      body .container #content .post .post-body blockquote :first-child, body .container #content .content .post-body blockquote :first-child {
+        padding-top: 0; }
+      body .container #content .post .post-body table, body .container #content .content .post-body table {
+        border: 1px solid #ccc;
+        margin-bottom: 1em; }
+        body .container #content .post .post-body table th, body .container #content .content .post-body table th {
+          font-size: 85%; }
+        body .container #content .post .post-body table td, body .container #content .post .post-body table th, body .container #content .content .post-body table td, body .container #content .content .post-body table th {
+          padding: .4em; }
+        body .container #content .post .post-body table tr, body .container #content .content .post-body table tr {
+          border-bottom: 1px solid #ccc; }
+      body .container #content .post .post-body pre, body .container #content .content .post-body pre {
+        letter-spacing: .1em;
+        margin-bottom: 1em;
+        overflow: hidden; }
+        body .container #content .post .post-body pre code, body .container #content .content .post-body pre code {
+          display: block;
+          padding: 1em;
+          font-size: 100%;
+          background-color: #444444;
+          color: #fff; }
+      body .container #content .post .post-body pre:hover, body .container #content .content .post-body pre:hover {
+        overflow: visible; }
       body .container #content .post .post-footer, body .container #content .content .post-footer {
         padding-top: .5em;
         border-top: 2px dotted #ccc;
