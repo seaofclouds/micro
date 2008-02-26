@@ -35,5 +35,7 @@
                   - else
                     %a{:href => comment.authorurl, :title => "Visit " + comment.authorurl, :class => "url"}= h(comment.author)
                 %span.date= cascading_date(comment.created_at)
+                - if (comment.author == cookies[:author]) &&  ((Time.now - comment.created_at) < 5.minutes)
+                  %span.edit= link_to 'Edit for another ' + ((6.minutes - (Time.now - comment.created_at)).to_i / 60).to_s + ' minutes', [:edit, @post, comment], :title => "Edit"
                 
       = render :partial => "/comments/commentform", :locals => { :button_name => 'Submit Comment', :form_name => "Leave a Comment"}
