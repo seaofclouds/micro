@@ -3,8 +3,10 @@ body .container {
   min-width: 526px; }
   body .container form textarea.text {
     width: 36.9em; }
-  body .container #admin .item {
+  body .container #admin {
     line-height: 1%; }
+    body .container #admin .item {
+      line-height: 1%; }
   body .container #content .comments .comment {
     clear: both; }
   body .container #content form fieldset.wide .text {
