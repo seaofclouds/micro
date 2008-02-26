@@ -1,4 +1,6 @@
-body .container #content .post, body .container #content .comments h2, body .container #content .comments .comments-header {
-  height: 1%; }
-body .container #content form input.text {
-  height: 2em; }
+body .container {
+  width: 41.8em; }
+  body .container #content .post, body .container #content .comments h2, body .container #content .comments .comments-header {
+    height: 1%; }
+  body .container #content form input.text {
+    height: 2em; }
