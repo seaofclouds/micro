@@ -8,12 +8,13 @@
       = render :partial => "/comments/commentform", :locals => { :button_name => 'Submit Comment', :form_name => "Be the first to Comment"}
     - else
       .comments
-        %h2
-          = comment_count = @post.comments.count
-          = comment_count == 1 ? 'Comment' : 'Comments'
-        %a.leaveacommentbutton{:href => "#leaveacomment", :title => "Jump to Comment Form"} Leave a Comment
-        - if ie6? || ie7?
-          .clear &nbsp;
+        .comments-header
+          %h2
+            = comment_count = @post.comments.count
+            = comment_count == 1 ? 'Comment' : 'Comments'
+          %a.leaveacommentbutton{:href => "#leaveacomment", :title => "Jump to Comment Form"} Leave a Comment
+          - if ie6? || ie7?
+            .clear &nbsp;
           
         - @post.comments.each do |comment|
           - div_for(comment) do

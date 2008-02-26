@@ -15,14 +15,15 @@
     - else
       = stylesheet_link_tag "screen"
       = yield :head_style
-    = stylesheet_link_tag "admin" if admin?
+    = stylesheet_link_tag "admin" if admin? && !ie6?
     = stylesheet_link_tag "ie7" if ie7?
+    = stylesheet_link_tag "ie6" if ie6?
 
     = javascript_include_tag "jquery-1.2.2.min.js"
     = javascript_include_tag "cookie"
     = javascript_include_tag "application" if !mobile_safari?
     = javascript_include_tag "mobilesafari" if mobile_safari?
-    = javascript_include_tag "admin" if admin?
+    = javascript_include_tag "admin" if admin? && !ie6?
     
     = yield :head_javascript
     - if yield :head_javascript_inline
@@ -36,7 +37,7 @@
   %body{body_id_and_class}    
     .container
       - if admin?
-        = render_partial '/shared/admin_menu'
+        = render_partial '/shared/admin_menu' unless ie6?
       - if !flash.blank?
         .flash= flash[:notice]
       #header
