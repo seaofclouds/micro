@@ -53,8 +53,6 @@ body .container #admin {
         background-color: #eee; }
         body .container #admin .menu .recentcomments .item:hover a, body .container #admin .menu .drafts .item:hover a {
           color: #333; }
-    body .container #admin .menu .menu-body {
-      padding-bottom: 1em; }
     body .container #admin .menu .menu-footer {
       padding-top: 1em;
       border-top: 2px dotted #ccc; }

@@ -1,9 +1,5 @@
-micro is a simple blogging application built with ruby, rails jquery, and a little patience. as a blog goes, this one's pretty simple, and perfect for our needs.
+micro blog is a simple blogging application designed for use with our very own micro theme. as blog goes, this one's pretty simple.
 
 required gems:
 haml
 redcloth
-
-== LICENSE: ==
-
-Copyright (c) 2008 seaofclouds

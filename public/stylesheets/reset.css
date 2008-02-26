@@ -237,10 +237,7 @@ ol.digit {
 }
 
 /* === clear fix === */
-
-.clear {
-  clear: both;
-}
+  
 .clear:after, .post-footer:after {
   content: ".";
   display: block;
