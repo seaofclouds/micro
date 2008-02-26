@@ -204,9 +204,6 @@ body {
           color: #777; }
           body .container #content .comments .comment .comment-footer .author {
             font-size: 120%; }
-          body .container #content .comments .comment .comment-footer .edit {
-            margin-left: 1em;
-            font-size: 85%; }
     body .container #content .post .caption, body .container #content .comment .caption {
       font-family: verdana, sans-serif;
       font-size: 85%;
