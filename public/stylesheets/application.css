@@ -153,7 +153,8 @@ body {
         position: relative; }
         body .container #content .comments .comment .comment-body {
           background-color: #ddd;
-          padding: 1em; }
+          padding: 1em;
+          clear: both; }
         body .container #content .comments .comment .comment-footer {
           background-image: url(/images/comment_quote.gif);
           background-repeat: no-repeat;
