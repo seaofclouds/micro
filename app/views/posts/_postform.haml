@@ -1,6 +1,6 @@
 = error_messages_for :post, :message => nil
 
-- unless mobile_safari?
+- unless mobile_safari? || ie6? || ie7?
   - content_for :head_javascript do
     = javascript_include_tag "jtageditor.js"
     = javascript_include_tag "jtageditor-textile.js"

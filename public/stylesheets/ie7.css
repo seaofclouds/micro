@@ -7,3 +7,5 @@ body .container {
     line-height: 1%; }
   body .container #content .comments .comment {
     clear: both; }
+  body .container #content form fieldset.wide .text {
+    width: 36.9em; }
