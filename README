@@ -1,6 +1,5 @@
-jquery in action site, for yehuda katz. forked from micro, blogware that fits in your pocket.
+micro blog is a simple blogging application designed for use with our very own micro theme. as blog goes, this one's pretty simple.
 
 required gems:
-rails
 haml
 redcloth
