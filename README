@@ -1,4 +1,4 @@
-micro blog is a simple blogging application designed for use with our very own micro theme. as blog goes, this one's pretty simple.
+micro is a simple blogging application based on our very own micro theme for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, just pure post-it and share it goodness. inspired by the more robust mephisto blogging system, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml and textile. enjoy.
 
 required gems:
 haml
