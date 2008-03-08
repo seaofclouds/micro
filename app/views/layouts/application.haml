@@ -8,6 +8,7 @@
     - if mobile_safari?
       %meta{:name => "viewport", :content => "width = device-width, initial-scale = 1.0"}/
       %link{:rel => "apple-touch-icon", :href => "/images/logo-appletouch.png"}/
+    = yield :head_meta
     = stylesheet_link_tag "reset"
     = stylesheet_link_tag "application"
     - if mobile_safari?

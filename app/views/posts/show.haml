@@ -2,7 +2,9 @@
   - @title = @post.title + " (" + @post.tag_list.to_s + ")"
 - else
   - @title = @post.title
-
+- content_for :head_meta do
+  - if @post.tags.any?
+    %meta{:name => "keywords", :content => @post.tag_list}
 = render :partial => '/posts/post'
 
 - unless @post.draft?
