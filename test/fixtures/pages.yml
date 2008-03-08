@@ -22,8 +22,10 @@ h4. license\n\n
 <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\" class=\"fl mr1\">
 <img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png\" /></a> micro is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a>."
   draft: false
-
+  permalink: about
+  
 two:
   title: contact
   body: for more information about micro, or to contact the authors, please visit "micro on github":https://github.com/seaofclouds/micro/. 
   draft: true
+  permalink: contact

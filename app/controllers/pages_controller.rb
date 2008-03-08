@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
-    @page = Page.find(params[:id])
+    @page = Page.find_by_permalink(params[:id])
   end
 
   # GET /posts/new
@@ -20,7 +20,7 @@ class PagesController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @page = Page.find(params[:id])
+    @page = Page.find_by_permalink(params[:id])
   end
 
   # POST /posts
@@ -42,7 +42,7 @@ class PagesController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.xml
   def update
-    @page = Page.find(params[:id])
+    @page = Page.find_by_permalink(params[:id])
 
     respond_to do |format|
       if @page.update_attributes(params[:page])
@@ -59,7 +59,7 @@ class PagesController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.xml
   def destroy
-    @page = Page.find(params[:id])
+    @page = Page.find_by_permalink(params[:id])
     @page.destroy
 
     respond_to do |format|

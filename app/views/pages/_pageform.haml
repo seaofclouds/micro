@@ -34,7 +34,7 @@
     = f.text_area :body, :class => "page-body wysiwyg", :tabindex => 2
   %fieldset.wide
     %label{:for => "permalink"} permalink
-    = f.text_field :permalink, :value => @page.title.to_s, :tabindex => 3
+    = f.text_field :permalink, :tabindex => 3
   %p.form-controls
     %span.checkbox
       = check_box("page", "draft")
