@@ -48,6 +48,8 @@ class ApplicationController < ActionController::Base
  # for admin header, and comments in footer
  def load_pages
    @pages = Page.find(:all, :order => 'created_at DESC')
+   @livepages = Page.find(:all, :conditions => {:draft => false}, :order => 'created_at DESC')
+   
  end
  def load_posts
    @posts = Post.find(:all, :conditions => {:draft => false}, :order => 'created_at DESC')

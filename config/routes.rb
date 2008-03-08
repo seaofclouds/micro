@@ -4,7 +4,8 @@ ActionController::Routing::Routes.draw do |map|
   end
 
   map.resources :tags, :has_many => :posts
-  map.root :controller => 'posts'
+  
+  map.root :controller => 'posts' 
   
   map.resources :pages
   

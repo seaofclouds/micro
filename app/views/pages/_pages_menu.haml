@@ -1,5 +1,9 @@
 .pages-menu
-  - for page in @pages do
+  - if current_page?(root_url)
+    = link_to "posts", root_url, :class => "active"
+  - else
+    = link_to "posts", root_url
+  - for page in @livepages do
     - if current_page?(page)
       = link_to h(page.title), page, :class => "active"
     - else

@@ -3,7 +3,9 @@
 one:
   title: about
   body: micro is a simple blogging application based on our very own micro theme for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share it goodness. inspired by the more robust mephisto blogging system, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
+  draft: false
 
 two:
   title: contact
   body: for more information about micro, or to contact the authors, please visit "micro on github":https://github.com/seaofclouds/micro/. 
+  draft: true
