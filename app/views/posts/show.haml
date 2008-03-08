@@ -1,4 +1,7 @@
-- @title = @post.title + " (" + @post.tag_list.to_s + ")"
+- if @post.tags.any?
+  - @title = @post.title + " (" + @post.tag_list.to_s + ")"
+- else
+  - @title = @post.title
 
 = render :partial => '/posts/post'
 
