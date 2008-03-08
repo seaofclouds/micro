@@ -1,8 +1,13 @@
-Micro is a simple blogging application based on our very own micro theme for mephisto. as blogware goes, micro is pretty simple – no themes, no plugins, no user accounts, no asset management, no separate admin interface – just pure post-it and share-it goodness.
+Micro is a simple blogging application based on our very own micro 
+theme for mephisto. as blogware goes, micro is pretty simple – no 
+themes, no plugins, no user accounts, no asset management, no 
+separate admin interface – just pure post-it and share-it goodness.
 
 MICRO IS BLOGWARE THAT FITS IN YOUR POCKET.
 
-inspired by the more robust mephisto blogging system, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
+inspired by the more robust mephisto blogging system, and by 
+bloggers everywhere, micro is powered by ruby, rails, jquery, haml, 
+textile and users like you. enjoy.
 
 git clone git@github.com:seaofclouds/micro.git
 
@@ -24,5 +29,6 @@ REQUIREMENTS
 
 LICENSE
 
-micro is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License.
+micro is licensed under a Creative Commons 
+Attribution-Noncommercial-Share Alike 3.0 Unported License.
 http://creativecommons.org/licenses/by-nc-sa/3.0/
