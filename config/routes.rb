@@ -9,6 +9,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :pages
   
+  #map.connect '/:permalink', :controller => 'pages', :action => 'show'
+  
   map.login '/login', :controller => 'posts', :action => 'index', :login => 'true'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   

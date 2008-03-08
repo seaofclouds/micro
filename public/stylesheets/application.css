@@ -153,11 +153,19 @@ body {
         body .container #content .post .post-body pre code, body .container #content .post .page-body pre code, body .container #content .content .post-body pre code, body .container #content .content .page-body pre code, body .container #content .page .post-body pre code, body .container #content .page .page-body pre code {
           display: block;
           padding: 1em;
-          font-size: 100%;
+          font-size: 85%;
           background-color: #444444;
           color: #fff; }
       body .container #content .post .post-body pre:hover, body .container #content .post .page-body pre:hover, body .container #content .content .post-body pre:hover, body .container #content .content .page-body pre:hover, body .container #content .page .post-body pre:hover, body .container #content .page .page-body pre:hover {
         overflow: visible; }
+      body .container #content .post .post-body .fr, body .container #content .post .page-body .fr, body .container #content .content .post-body .fr, body .container #content .content .page-body .fr, body .container #content .page .post-body .fr, body .container #content .page .page-body .fr {
+        float: right; }
+      body .container #content .post .post-body .fl, body .container #content .post .page-body .fl, body .container #content .content .post-body .fl, body .container #content .content .page-body .fl, body .container #content .page .post-body .fl, body .container #content .page .page-body .fl {
+        float: left; }
+      body .container #content .post .post-body .mr1, body .container #content .post .page-body .mr1, body .container #content .content .post-body .mr1, body .container #content .content .page-body .mr1, body .container #content .page .post-body .mr1, body .container #content .page .page-body .mr1 {
+        margin-right: 1em; }
+      body .container #content .post .post-body .ml1, body .container #content .post .page-body .ml1, body .container #content .content .post-body .ml1, body .container #content .content .page-body .ml1, body .container #content .page .post-body .ml1, body .container #content .page .page-body .ml1 {
+        margin-left: 1em; }
       body .container #content .post .post-footer, body .container #content .post .page-footer, body .container #content .content .post-footer, body .container #content .content .page-footer, body .container #content .page .post-footer, body .container #content .page .page-footer {
         padding-top: .5em;
         border-top: 2px dotted #ccc;

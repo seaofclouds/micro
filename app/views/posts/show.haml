@@ -1,4 +1,4 @@
-- @title = @post.title
+- @title = @post.title + " (" + @post.tag_list.to_s + ")"
 
 = render :partial => '/posts/post'
 
