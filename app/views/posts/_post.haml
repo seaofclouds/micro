@@ -2,7 +2,11 @@
   - if admin?
     = render_partial '/posts/admin_menu', nil, :post => post
   .post-header
-    %h3.entry-title=link_to_unless_current h(post.title), post, :title => "View " + "'" + post.title + "'" 
+    - if current_page?(post)
+      %h1.entry-title= h(post.title)
+    - else
+      %h3.entry-title=link_to h(post.title), post, :title => "View " + "'" + post.title + "'" 
+      
     %p.meta.vcard
       = gravatar_for post.authoremail,20
       %span.author.fn= h(post.author)
