@@ -31,7 +31,7 @@
   %fieldset.wide.body
     %label{:for => "body"}
       body
-    = f.text_area :body, :class => "page-body wysiwyg", :tabindex => 2
+    ~ f.text_area :body, :class => "page-body wysiwyg", :tabindex => 2
   %fieldset.wide
     %label{:for => "permalink"} permalink
     = f.text_field :permalink, :tabindex => 3

@@ -80,7 +80,7 @@
           %a.cancel{:href => "#", :title => "cancel excerpt"}cancel
         - else
           %a.cancel{:href => "#", :title => "hide"}hide
-    = f.text_area :excerpt, :class => "post-excerpt wysiwyg", :tabindex => 2
+    ~ f.text_area :excerpt, :class => "post-excerpt wysiwyg", :tabindex => 2
   %fieldset.wide.body
     %label{:for => "body"}
       body
@@ -89,7 +89,7 @@
           %a.toggle-excerpt{:href => "#", :title => "add an excerpt to your post"}add an excerpt
         - else
           %a.toggle-excerpt{:href => "#", :title => "hide excerpt"}hide excerpt
-    = f.text_area :body, :class => "post-body wysiwyg", :tabindex => 3
+    ~ f.text_area :body, :class => "post-body wysiwyg", :tabindex => 3
   %fieldset.wide
     %label{:for => "tag_list"} 
       tags

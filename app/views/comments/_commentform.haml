@@ -4,8 +4,8 @@
   = error_messages_for :comment, :message => nil
 
 - form_for([@post, @comment]) do |f|
-  = f.text_area :body, :class => "human", :value => "", :style =>"width:0; height:0; padding:0", :tabindex => -1
-  = f.text_area :bacon, :value => @comment.body(:source), :class => "bacon", :tabindex => 2
+  ~ f.text_area :body, :class => "human", :value => "", :style =>"width:0; height:0; padding:0", :tabindex => -1
+  ~ f.text_area :bacon, :value => @comment.body(:source), :class => "bacon", :tabindex => 2
   - if @comment.author?
     %fieldset
       %label{:for => "author"} name

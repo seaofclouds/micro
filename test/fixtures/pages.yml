@@ -2,22 +2,23 @@
 
 one:
   title: about
-  body: "%(dropcap)m% icro is a simple blogging application based on our very own \"micro theme\":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.\n\n
+  body: "%(dropcap)m% icro is a simple blogging application based on our very own \"micro theme\":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.\n
 
-h1(center). micro is blogware that fits in your pocket.\n\n
+h1(center). micro is blogware that fits in your pocket.\n
 
 inspired by the more robust \"mephisto blogging system\":http://mephistoblog.com, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
 
-\n\n  git clone git@github.com:seaofclouds/micro.git\n\n
+\n  git clone git@github.com:seaofclouds/micro.git\n
   
-h4. features\n\n
+h4. features\n
 
-* \"flickr\":http://flickr.com/ friendly width for photo sharing splendor\n* \"hAtom\":http://microformats.org/wiki/hatom microformats\n* dynamic width and fonts, pages scale with browser font size\n* SEO friendly\n* iphone friendly\n* built with rails 2.0\n* cross browser support, plays friendly with \"good or bad browsers\":http://goodbrowserbadbrowser.com\n\n
+* \"flickr\":http://flickr.com/ friendly width for photo sharing splendor\n* \"hAtom\":http://microformats.org/wiki/hatom microformats\n* dynamic width and fonts, pages scale with browser font size\n* SEO friendly\n* iphone friendly\n* built with rails 2.0\n* cross browser support, plays friendly with \"good or bad browsers\":http://goodbrowserbadbrowser.com\n
 
-h4. requirements\n\n* ruby and rails friendly host or server\n* knowledge of ruby, haml, sass, css or willingness to learn\n* git for keeping up to date\n\n
+h4. requirements\n
 
-h4. license\n\n
+* ruby and rails friendly host or server\n* knowledge of ruby, haml, sass, css or willingness to learn\n* git for keeping up to date\n
 
+h4. license\n
 
 <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\" class=\"fl mr1\">
 <img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png\" /></a> micro is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/\">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a>."
