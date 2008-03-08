@@ -46,8 +46,8 @@
             %a{:href => "/"}= APP_CONFIG['brand'] 
         - else
           %h5.logo
-            %a{:href => "/"}= APP_CONFIG['brand']               
-        = yield :breadcrumbs
+            %a{:href => "/"}= APP_CONFIG['brand']
+        = render_partial '/pages/pages_menu'
       #content
         = yield :layout
       #footer

@@ -27,9 +27,26 @@ body
       .logo
         :font-size 320%
         :font-weight bold
+        :float left
         a
           :text-decoration none
           :color #fff
+      .pages-menu
+        a
+          :display block
+          :float left
+          :padding 1em 1em 1.3em 1em
+          :margin-left 1em
+          :margin-top 1.3em
+          :background-color #aaa
+          :color #555
+          :text-transform uppercase
+          :font-weight bold
+          :text-decoration none
+          :font-size 85%
+        a.active
+          :background-color #F1F1F1
+          :color #777
     #footer
       :padding-top 3em
       :padding-bottom 1em
@@ -52,7 +69,7 @@ body
         :font-weight bold
         :text-decoration none
     #content
-      .post, .content
+      .post, .content, .page
         :padding 1em
         :background-color #fff
         :margin-bottom 1em
@@ -69,7 +86,7 @@ body
           em
             :font-style normal
             :font-weight normal
-        .post-header
+        .post-header, .page-header
           :padding-bottom 1em
           h3
             :font-size 200%
@@ -92,7 +109,7 @@ body
             img
               :float left
               :padding-right .5em
-        .post-body
+        .post-body, .page-body
           // post content formatting
           p, ul, ol, h1, h2, h3, h4, h5, h6
             :padding-bottom 1em
@@ -155,7 +172,7 @@ body
               :color #fff
           pre:hover
             :overflow visible
-        .post-footer
+        .post-footer, .page-footer
           :padding-top .5em
           :border-top 2px dotted #ccc
           :font-family verdana, sans-serif
@@ -218,7 +235,7 @@ body
             :color #777
             .author
               :font-size 120%
-      .post, .comment
+      .post, .comment, .page
         .caption
           :font-family verdana, sans-serif
           :font-size 85%

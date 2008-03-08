@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 9) do
+ActiveRecord::Schema.define(:version => 10) do
 
   create_table "comments", :force => true do |t|
     t.integer  "post_id"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(:version => 9) do
     t.string   "author"
     t.string   "authorurl"
     t.string   "authoremail"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.boolean  "draft"
+    t.string   "permalink"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "posts", :force => true do |t|

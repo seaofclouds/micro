@@ -1,0 +1,14 @@
+- @title = "Edit &raquo; " + @page.title
+
+.content  
+  .admin
+    .menu
+      %span.show= link_to 'Show', @page
+      %span.delete= link_to 'Destroy', @page, :method => 'delete', :confirm => 'Are you sure?', :title => "Delete this page"    
+      .clear
+  .content-header
+    - if @page.draft?
+      %h2 Edit Draft
+    - else
+      %h2 Edit Page
+  = render :partial => "/pages/pageform", :locals => { :button_name => "Update Page"}

@@ -17,10 +17,26 @@ body {
       margin: 0 auto; }
     body .container #header .logo {
       font-size: 320%;
-      font-weight: bold; }
+      font-weight: bold;
+      float: left; }
       body .container #header .logo a {
         text-decoration: none;
         color: #fff; }
+    body .container #header .pages-menu a {
+      display: block;
+      float: left;
+      padding: 1em 1em 1.3em 1em;
+      margin-left: 1em;
+      margin-top: 1.3em;
+      background-color: #aaa;
+      color: #555;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 85%; }
+    body .container #header .pages-menu a.active {
+      background-color: #F1F1F1;
+      color: #777; }
     body .container #footer {
       padding-top: 3em;
       padding-bottom: 1em;
@@ -42,7 +58,7 @@ body {
         font-size: 95%;
         font-weight: bold;
         text-decoration: none; }
-    body .container #content .post, body .container #content .content {
+    body .container #content .post, body .container #content .content, body .container #content .page {
       padding: 1em;
       background-color: #fff;
       margin-bottom: 1em;
@@ -50,41 +66,41 @@ body {
       background-image: url(/images/bg-eee-fff.gif);
       background-repeat: repeat-x;
       background-position: center top; }
-      body .container #content .post h2, body .container #content .content h2 {
+      body .container #content .post h2, body .container #content .content h2, body .container #content .page h2 {
         font-size: 100%;
         text-transform: uppercase;
         font-weight: bold;
         color: #444444;
         padding-bottom: 1em; }
-        body .container #content .post h2 em, body .container #content .content h2 em {
+        body .container #content .post h2 em, body .container #content .content h2 em, body .container #content .page h2 em {
           font-style: normal;
           font-weight: normal; }
-      body .container #content .post .post-header, body .container #content .content .post-header {
+      body .container #content .post .post-header, body .container #content .post .page-header, body .container #content .content .post-header, body .container #content .content .page-header, body .container #content .page .post-header, body .container #content .page .page-header {
         padding-bottom: 1em; }
-        body .container #content .post .post-header h3, body .container #content .content .post-header h3 {
+        body .container #content .post .post-header h3, body .container #content .post .page-header h3, body .container #content .content .post-header h3, body .container #content .content .page-header h3, body .container #content .page .post-header h3, body .container #content .page .page-header h3 {
           font-size: 200%; }
-          body .container #content .post .post-header h3 a, body .container #content .content .post-header h3 a {
+          body .container #content .post .post-header h3 a, body .container #content .post .page-header h3 a, body .container #content .content .post-header h3 a, body .container #content .content .page-header h3 a, body .container #content .page .post-header h3 a, body .container #content .page .page-header h3 a {
             text-decoration: none;
             color: #444444; }
-          body .container #content .post .post-header h3 a:hover, body .container #content .content .post-header h3 a:hover {
+          body .container #content .post .post-header h3 a:hover, body .container #content .post .page-header h3 a:hover, body .container #content .content .post-header h3 a:hover, body .container #content .content .page-header h3 a:hover, body .container #content .page .post-header h3 a:hover, body .container #content .page .page-header h3 a:hover {
             text-decoration: underline; }
-        body .container #content .post .post-header .meta, body .container #content .content .post-header .meta {
+        body .container #content .post .post-header .meta, body .container #content .post .page-header .meta, body .container #content .content .post-header .meta, body .container #content .content .page-header .meta, body .container #content .page .post-header .meta, body .container #content .page .page-header .meta {
           color: #777777;
           text-transform: uppercase;
           line-height: 20px; }
-          body .container #content .post .post-header .meta a, body .container #content .content .post-header .meta a {
+          body .container #content .post .post-header .meta a, body .container #content .post .page-header .meta a, body .container #content .content .post-header .meta a, body .container #content .content .page-header .meta a, body .container #content .page .post-header .meta a, body .container #content .page .page-header .meta a {
             text-decoration: none;
             color: #777777; }
-          body .container #content .post .post-header .meta a:hover, body .container #content .content .post-header .meta a:hover {
+          body .container #content .post .post-header .meta a:hover, body .container #content .post .page-header .meta a:hover, body .container #content .content .post-header .meta a:hover, body .container #content .content .page-header .meta a:hover, body .container #content .page .post-header .meta a:hover, body .container #content .page .page-header .meta a:hover {
             text-decoration: underline; }
-          body .container #content .post .post-header .meta .author, body .container #content .content .post-header .meta .author {
+          body .container #content .post .post-header .meta .author, body .container #content .post .page-header .meta .author, body .container #content .content .post-header .meta .author, body .container #content .content .page-header .meta .author, body .container #content .page .post-header .meta .author, body .container #content .page .page-header .meta .author {
             color: #444444; }
-          body .container #content .post .post-header .meta img, body .container #content .content .post-header .meta img {
+          body .container #content .post .post-header .meta img, body .container #content .post .page-header .meta img, body .container #content .content .post-header .meta img, body .container #content .content .page-header .meta img, body .container #content .page .post-header .meta img, body .container #content .page .page-header .meta img {
             float: left;
             padding-right: .5em; }
-      body .container #content .post .post-body p, body .container #content .post .post-body ul, body .container #content .post .post-body ol, body .container #content .post .post-body h1, body .container #content .post .post-body h2, body .container #content .post .post-body h3, body .container #content .post .post-body h4, body .container #content .post .post-body h5, body .container #content .post .post-body h6, body .container #content .content .post-body p, body .container #content .content .post-body ul, body .container #content .content .post-body ol, body .container #content .content .post-body h1, body .container #content .content .post-body h2, body .container #content .content .post-body h3, body .container #content .content .post-body h4, body .container #content .content .post-body h5, body .container #content .content .post-body h6 {
+      body .container #content .post .post-body p, body .container #content .post .post-body ul, body .container #content .post .post-body ol, body .container #content .post .post-body h1, body .container #content .post .post-body h2, body .container #content .post .post-body h3, body .container #content .post .post-body h4, body .container #content .post .post-body h5, body .container #content .post .post-body h6, body .container #content .post .page-body p, body .container #content .post .page-body ul, body .container #content .post .page-body ol, body .container #content .post .page-body h1, body .container #content .post .page-body h2, body .container #content .post .page-body h3, body .container #content .post .page-body h4, body .container #content .post .page-body h5, body .container #content .post .page-body h6, body .container #content .content .post-body p, body .container #content .content .post-body ul, body .container #content .content .post-body ol, body .container #content .content .post-body h1, body .container #content .content .post-body h2, body .container #content .content .post-body h3, body .container #content .content .post-body h4, body .container #content .content .post-body h5, body .container #content .content .post-body h6, body .container #content .content .page-body p, body .container #content .content .page-body ul, body .container #content .content .page-body ol, body .container #content .content .page-body h1, body .container #content .content .page-body h2, body .container #content .content .page-body h3, body .container #content .content .page-body h4, body .container #content .content .page-body h5, body .container #content .content .page-body h6, body .container #content .page .post-body p, body .container #content .page .post-body ul, body .container #content .page .post-body ol, body .container #content .page .post-body h1, body .container #content .page .post-body h2, body .container #content .page .post-body h3, body .container #content .page .post-body h4, body .container #content .page .post-body h5, body .container #content .page .post-body h6, body .container #content .page .page-body p, body .container #content .page .page-body ul, body .container #content .page .page-body ol, body .container #content .page .page-body h1, body .container #content .page .page-body h2, body .container #content .page .page-body h3, body .container #content .page .page-body h4, body .container #content .page .page-body h5, body .container #content .page .page-body h6 {
         padding-bottom: 1em; }
-      body .container #content .post .post-body .more, body .container #content .content .post-body .more {
+      body .container #content .post .post-body .more, body .container #content .post .page-body .more, body .container #content .content .post-body .more, body .container #content .content .page-body .more, body .container #content .page .post-body .more, body .container #content .page .page-body .more {
         display: block;
         padding-right: 20px;
         padding-top: .5em;
@@ -99,69 +115,69 @@ body {
         font-family: verdana, sans-serif;
         font-size: 85%;
         color: #999; }
-      body .container #content .post .post-body a.more:hover, body .container #content .content .post-body a.more:hover {
+      body .container #content .post .post-body a.more:hover, body .container #content .post .page-body a.more:hover, body .container #content .content .post-body a.more:hover, body .container #content .content .page-body a.more:hover, body .container #content .page .post-body a.more:hover, body .container #content .page .page-body a.more:hover {
         color: #777;
         text-decoration: underline; }
-      body .container #content .post .post-body h2, body .container #content .content .post-body h2 {
+      body .container #content .post .post-body h2, body .container #content .post .page-body h2, body .container #content .content .post-body h2, body .container #content .content .page-body h2, body .container #content .page .post-body h2, body .container #content .page .page-body h2 {
         text-transform: none;
         font-size: 144%;
         font-weight: normal; }
-      body .container #content .post .post-body ul, body .container #content .content .post-body ul {
+      body .container #content .post .post-body ul, body .container #content .post .page-body ul, body .container #content .content .post-body ul, body .container #content .content .page-body ul, body .container #content .page .post-body ul, body .container #content .page .page-body ul {
         list-style-type: square;
         margin-left: 1.4em; }
-      body .container #content .post .post-body ol, body .container #content .content .post-body ol {
+      body .container #content .post .post-body ol, body .container #content .post .page-body ol, body .container #content .content .post-body ol, body .container #content .content .page-body ol, body .container #content .page .post-body ol, body .container #content .page .page-body ol {
         list-style-type: decimal;
         margin-left: 1.6em; }
-      body .container #content .post .post-body blockquote, body .container #content .content .post-body blockquote {
+      body .container #content .post .post-body blockquote, body .container #content .post .page-body blockquote, body .container #content .content .post-body blockquote, body .container #content .content .page-body blockquote, body .container #content .page .post-body blockquote, body .container #content .page .page-body blockquote {
         border-left: 5px solid #ccc;
         padding-left: 1em;
         margin-bottom: 1em; }
-        body .container #content .post .post-body blockquote p, body .container #content .content .post-body blockquote p {
+        body .container #content .post .post-body blockquote p, body .container #content .post .page-body blockquote p, body .container #content .content .post-body blockquote p, body .container #content .content .page-body blockquote p, body .container #content .page .post-body blockquote p, body .container #content .page .page-body blockquote p {
           padding-bottom: 0;
           padding-top: 1em; }
-      body .container #content .post .post-body blockquote :first-child, body .container #content .content .post-body blockquote :first-child {
+      body .container #content .post .post-body blockquote :first-child, body .container #content .post .page-body blockquote :first-child, body .container #content .content .post-body blockquote :first-child, body .container #content .content .page-body blockquote :first-child, body .container #content .page .post-body blockquote :first-child, body .container #content .page .page-body blockquote :first-child {
         padding-top: 0; }
-      body .container #content .post .post-body table, body .container #content .content .post-body table {
+      body .container #content .post .post-body table, body .container #content .post .page-body table, body .container #content .content .post-body table, body .container #content .content .page-body table, body .container #content .page .post-body table, body .container #content .page .page-body table {
         border: 1px solid #ccc;
         margin-bottom: 1em; }
-        body .container #content .post .post-body table th, body .container #content .content .post-body table th {
+        body .container #content .post .post-body table th, body .container #content .post .page-body table th, body .container #content .content .post-body table th, body .container #content .content .page-body table th, body .container #content .page .post-body table th, body .container #content .page .page-body table th {
           font-size: 85%; }
-        body .container #content .post .post-body table td, body .container #content .post .post-body table th, body .container #content .content .post-body table td, body .container #content .content .post-body table th {
+        body .container #content .post .post-body table td, body .container #content .post .post-body table th, body .container #content .post .page-body table td, body .container #content .post .page-body table th, body .container #content .content .post-body table td, body .container #content .content .post-body table th, body .container #content .content .page-body table td, body .container #content .content .page-body table th, body .container #content .page .post-body table td, body .container #content .page .post-body table th, body .container #content .page .page-body table td, body .container #content .page .page-body table th {
           padding: .4em; }
-        body .container #content .post .post-body table tr, body .container #content .content .post-body table tr {
+        body .container #content .post .post-body table tr, body .container #content .post .page-body table tr, body .container #content .content .post-body table tr, body .container #content .content .page-body table tr, body .container #content .page .post-body table tr, body .container #content .page .page-body table tr {
           border-bottom: 1px solid #ccc; }
-      body .container #content .post .post-body pre, body .container #content .content .post-body pre {
+      body .container #content .post .post-body pre, body .container #content .post .page-body pre, body .container #content .content .post-body pre, body .container #content .content .page-body pre, body .container #content .page .post-body pre, body .container #content .page .page-body pre {
         letter-spacing: .1em;
         margin-bottom: 1em;
         overflow: hidden; }
-        body .container #content .post .post-body pre code, body .container #content .content .post-body pre code {
+        body .container #content .post .post-body pre code, body .container #content .post .page-body pre code, body .container #content .content .post-body pre code, body .container #content .content .page-body pre code, body .container #content .page .post-body pre code, body .container #content .page .page-body pre code {
           display: block;
           padding: 1em;
           font-size: 100%;
           background-color: #444444;
           color: #fff; }
-      body .container #content .post .post-body pre:hover, body .container #content .content .post-body pre:hover {
+      body .container #content .post .post-body pre:hover, body .container #content .post .page-body pre:hover, body .container #content .content .post-body pre:hover, body .container #content .content .page-body pre:hover, body .container #content .page .post-body pre:hover, body .container #content .page .page-body pre:hover {
         overflow: visible; }
-      body .container #content .post .post-footer, body .container #content .content .post-footer {
+      body .container #content .post .post-footer, body .container #content .post .page-footer, body .container #content .content .post-footer, body .container #content .content .page-footer, body .container #content .page .post-footer, body .container #content .page .page-footer {
         padding-top: .5em;
         border-top: 2px dotted #ccc;
         font-family: verdana, sans-serif;
         color: #777777;
         font-size: 85%; }
-        body .container #content .post .post-footer span, body .container #content .content .post-footer span {
+        body .container #content .post .post-footer span, body .container #content .post .page-footer span, body .container #content .content .post-footer span, body .container #content .content .page-footer span, body .container #content .page .post-footer span, body .container #content .page .page-footer span {
           background-repeat: no-repeat;
           background-position: left center;
           padding-right: 1em;
           padding-top: .2em;
           padding-bottom: .2em;
           white-space: nowrap; }
-        body .container #content .post .post-footer .comment-count, body .container #content .content .post-footer .comment-count {
+        body .container #content .post .post-footer .comment-count, body .container #content .post .page-footer .comment-count, body .container #content .content .post-footer .comment-count, body .container #content .content .page-footer .comment-count, body .container #content .page .post-footer .comment-count, body .container #content .page .page-footer .comment-count {
           background-image: url(/images/icon-comment.gif);
           padding-left: 20px; }
-        body .container #content .post .post-footer .share, body .container #content .content .post-footer .share {
+        body .container #content .post .post-footer .share, body .container #content .post .page-footer .share, body .container #content .content .post-footer .share, body .container #content .content .page-footer .share, body .container #content .page .post-footer .share, body .container #content .page .page-footer .share {
           background-image: url(/images/icon-add.gif);
           padding-left: 20px; }
-        body .container #content .post .post-footer .tags, body .container #content .content .post-footer .tags {
+        body .container #content .post .post-footer .tags, body .container #content .post .page-footer .tags, body .container #content .content .post-footer .tags, body .container #content .content .page-footer .tags, body .container #content .page .post-footer .tags, body .container #content .page .page-footer .tags {
           background-image: url(/images/icon-tag.gif);
           padding-left: 20px; }
     body .container #content .previous-posts .post {
@@ -204,11 +220,11 @@ body {
           color: #777; }
           body .container #content .comments .comment .comment-footer .author {
             font-size: 120%; }
-    body .container #content .post .caption, body .container #content .comment .caption {
+    body .container #content .post .caption, body .container #content .comment .caption, body .container #content .page .caption {
       font-family: verdana, sans-serif;
       font-size: 85%;
       color: #777777; }
-      body .container #content .post .caption a, body .container #content .comment .caption a {
+      body .container #content .post .caption a, body .container #content .comment .caption a, body .container #content .page .caption a {
         color: #777777; }
     body .container #content form .help {
       font-size: 85%;

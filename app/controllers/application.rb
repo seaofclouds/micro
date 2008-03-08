@@ -4,6 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   before_filter :authenticate
+  before_filter :load_pages
   before_filter :load_posts
   before_filter :load_comments
   
@@ -45,7 +46,9 @@ class ApplicationController < ActionController::Base
  end
 
  # for admin header, and comments in footer
- 
+ def load_pages
+   @pages = Page.find(:all, :order => 'created_at DESC')
+ end
  def load_posts
    @posts = Post.find(:all, :conditions => {:draft => false}, :order => 'created_at DESC')
    @draftposts = Post.find :all, :conditions => {:draft => true}, :order => 'created_at DESC'

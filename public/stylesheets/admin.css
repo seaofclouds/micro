@@ -89,12 +89,12 @@ body .container #admin {
       text-decoration: none;
       color: #777;
       cursor: pointer; }
-body .container #content .post .admin, body .container #content .content .admin {
+body .container #content .post .admin, body .container #content .content .admin, body .container #content .page .admin {
   font-size: 85%;
   right: 0;
   top: 0;
   position: absolute; }
-  body .container #content .post .admin .menu, body .container #content .content .admin .menu {
+  body .container #content .post .admin .menu, body .container #content .content .admin .menu, body .container #content .page .admin .menu {
     background-image: url(/images/admin-tab-grey.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -102,15 +102,15 @@ body .container #content .post .admin, body .container #content .content .admin 
     padding: .2em 0 .4em 2.3em;
     text-align: right;
     width: 5em; }
-    body .container #content .post .admin .menu a, body .container #content .content .admin .menu a {
+    body .container #content .post .admin .menu a, body .container #content .content .admin .menu a, body .container #content .page .admin .menu a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase; }
-    body .container #content .post .admin .menu span, body .container #content .content .admin .menu span {
+    body .container #content .post .admin .menu span, body .container #content .content .admin .menu span, body .container #content .page .admin .menu span {
       display: block;
       float: left; }
-    body .container #content .post .admin .menu span.delete, body .container #content .content .admin .menu span.delete {
+    body .container #content .post .admin .menu span.delete, body .container #content .content .admin .menu span.delete, body .container #content .page .admin .menu span.delete {
       position: relative;
       background-image: url(/images/icon-trash-white.png);
       background-repeat: no-repeat;
@@ -119,7 +119,7 @@ body .container #content .post .admin, body .container #content .content .admin 
       width: 15px;
       margin-left: .5em;
       overflow: hidden; }
-      body .container #content .post .admin .menu span.delete a, body .container #content .content .admin .menu span.delete a {
+      body .container #content .post .admin .menu span.delete a, body .container #content .content .admin .menu span.delete a, body .container #content .page .admin .menu span.delete a {
         display: block;
         line-height: 15px; }
 body .container #content .previous-posts .post .admin {

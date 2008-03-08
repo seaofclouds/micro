@@ -1,0 +1,8 @@
+- div_for(page, :class => "hentry") do
+  - if admin?
+    = render_partial '/pages/admin_menu', nil, :page => page
+  - unless current_page?(page)
+    .page-header
+      %h3.entry-title=link_to_unless_current h(page.title), page
+  .page-body.entry-content
+    = page.body

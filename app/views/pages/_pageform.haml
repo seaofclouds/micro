@@ -1,0 +1,41 @@
+= error_messages_for :page, :message => nil
+
+- unless mobile_safari? || ie6? || ie7?
+  - content_for :head_javascript do
+    = javascript_include_tag "jtageditor.js"
+    = javascript_include_tag "jtageditor-textile.js"
+  - content_for :head_javascript_inline do
+    :plain
+        $("form textarea.wysiwyg").jTagEditor({ 
+            tagSet:"/javascripts/jtageditor-textile.js",
+            tagMask:"",
+            insertOnShiftEnter:"",
+            insertOnCtrlEnter:"",
+          });
+        $("form div#page_body textarea").css("height", "20em")
+        $("form div#page_body").mouseover(function( ){
+          $("form div#page_body .jTagEditor-toolBar").css("display", "block");
+          $("form div#page_body textarea").css("height", "17.98em")
+        });
+        $("form div#page_body").mouseout(function( ){
+          $("form div#page_body .jTagEditor-toolBar").css("display", "none");
+          $("form div#page_body textarea").css("height", "20em")
+        });
+  - content_for :head_style do  
+    = stylesheet_link_tag "jtageditor-textile"
+
+- form_for(@page) do |f|
+  %fieldset.wide
+    %label{:for => "title"} title
+    = f.text_field :title, :tabindex => 1
+  %fieldset.wide.body
+    %label{:for => "body"}
+      body
+    = f.text_area :body, :class => "page-body wysiwyg", :tabindex => 2
+  %p.form-controls
+    %span.checkbox
+      = check_box("post", "draft")
+      %label{:for => "draft"} draft
+    = f.submit button_name, :tabindex => 3
+    .clear
+    

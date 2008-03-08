@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
   acts_as_textiled :body, :excerpt
   
   def to_param
-    "#{id}-#{title.downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-')
+    ("#{id}-#{title.downcase.gsub(/[^[:alnum:]]/,'_')}".gsub(/_{2,}/,'_')).chomp('_')
   end
   
 end

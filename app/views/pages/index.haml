@@ -1,0 +1,11 @@
+- if @pages.any?
+  .hfeed
+    = render :partial => '/pages/page', :collection => @pages
+- else
+  - if admin?
+    .content
+      %h1 Your blog currently has no pages.
+      %h4 A page is like a post, but without comments, tags or other viewer supported content. Pages are great for about pages, etc.
+      .form-controls
+        = link_to "Create One", {new_page_path, page}, :class => "submit"
+      

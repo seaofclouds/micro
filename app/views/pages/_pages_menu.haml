@@ -1,0 +1,7 @@
+.pages-menu
+  - for page in @pages do
+    - if current_page?(page)
+      = link_to h(page.title), page, :class => "active"
+    - else
+      = link_to h(page.title), page
+  .clear
