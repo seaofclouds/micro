@@ -1,6 +1,6 @@
 micro is a simple blogging application based on our very own "micro theme":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.
 
-h1. micro is blogware that fits in your pocket.
+h2(center). micro is blogware that fits in your pocket.
 
 inspired by the more robust "mephisto blogging system":http://mephistoblog.com, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
 
@@ -14,7 +14,7 @@ h4. features
 * SEO friendly
 * iphone friendly
 * built with rails 2.0
-* cross browser support, plays friendly with "good or bad browsers":http://goodbrowserbadbrowser.com
+* cross browser support, plays nice with "good or bad browsers":http://goodbrowserbadbrowser.com
 
 h4. requirements
 
