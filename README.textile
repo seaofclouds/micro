@@ -1,0 +1,34 @@
+micro is a simple blogging application based on our very own "micro theme":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.
+
+h1. micro is blogware that fits in your pocket.
+
+inspired by the more robust "mephisto blogging system":http://mephistoblog.com, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
+
+  git clone git@github.com:seaofclouds/micro.git
+
+h4. features
+
+* "flickr":http://flickr.com/ friendly width for photo sharing splendor
+* "hAtom":http://microformats.org/wiki/hatom microformats
+* dynamic width and fonts, pages scale with browser font size
+* SEO friendly
+* iphone friendly
+* built with rails 2.0
+* cross browser support, plays friendly with "good or bad browsers":http://goodbrowserbadbrowser.com
+
+h4. requirements
+
+* ruby and rails friendly host or server
+* knowledge of ruby, haml, sass, css or willingness to learn
+* git for keeping up to date
+
+h4. license
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="fl mr1"> <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a> micro is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a>.
+
+h4. props
+
+* many thanks to "ryan bates":http://workingwithrails.com/person/6491-ryan-bates for his most excellent "Railscasts":http://railscasts.com/
+* to our boys, pj and chris, of "err free":http://errfree.com/. their work at "err the blog":http://errtheblog.com/ has proven priceless during the tireless nights of development
+* to dru nelson for his support on IM and tips in keeping things simple.
+* and to "fabio akita":http://www.akitaonrails.com/ for his "rails 2.0 blog tutorial":http://www.akitaonrails.com/2007/12/12/rolling-with-rails-2-0-the-first-full-tutorial which was a good starting point.
