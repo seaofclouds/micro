@@ -1,6 +1,6 @@
-micro is a simple blogging application based on our very own "micro theme":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.
+%{font-size: 400%;line-height: .85em;display: block;float: left;padding-right: .07em;text-transform: uppercase;font-weight: bold;}m% icro is a simple blogging application based on our very own "micro theme":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.
 
-h2(center). micro is blogware that fits in your pocket.
+p{text-align:center;font-size:160%}. micro is blogware that fits in your pocket.
 
 inspired by the more robust "mephisto blogging system":http://mephistoblog.com, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
 
