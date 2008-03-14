@@ -30,5 +30,5 @@ h4. props
 
 * many thanks to "ryan bates":http://workingwithrails.com/person/6491-ryan-bates for his most excellent "Railscasts":http://railscasts.com/
 * to our boys, pj and chris, of "err free":http://errfree.com/. their work at "err the blog":http://errtheblog.com/ has proven priceless during the tireless nights of development
-* to dru nelson for his support on IM and tips in keeping things simple.
+* to "dru nelson":http://www.xxeo.com/ for his support on IM and tips in keeping things simple.
 * and to "fabio akita":http://www.akitaonrails.com/ for his "rails 2.0 blog tutorial":http://www.akitaonrails.com/2007/12/12/rolling-with-rails-2-0-the-first-full-tutorial which was a good starting point.

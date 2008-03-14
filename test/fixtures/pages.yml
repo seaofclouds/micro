@@ -4,7 +4,7 @@ one:
   title: about
   body: "%(dropcap)m% icro is a simple blogging application based on our very own \"micro theme\":http://micro.seaofclouds.com for mephisto.  as blogware goes, micro is pretty simple - no themes, no plugins, no user accounts, no asset management, no separate admin interface - just pure post-it and share-it goodness.\n
 
-h1(center). micro is blogware that fits in your pocket.\n
+h2(center). micro is blogware that fits in your pocket.\n
 
 inspired by the more robust \"mephisto blogging system\":http://mephistoblog.com, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
 
@@ -25,7 +25,7 @@ h4. license\n
 
 h4. props\n
 
-* many thanks to \"ryan bates\":http://workingwithrails.com/person/6491-ryan-bates for his most excellent \"Railscasts\":http://railscasts.com/\n* to our boys, pj and chris, of \"err free\":http://errfree.com/. their work at \"err the blog\":http://errtheblog.com/ has proven priceless during the tireless nights of development\n* to dru nelson for his support on IM and tips in keeping things simple.\n* and to \"fabio akita\":http://www.akitaonrails.com/ for his \"rails 2.0 blog tutorial\":http://www.akitaonrails.com/2007/12/12/rolling-with-rails-2-0-the-first-full-tutorial which was a good starting point.
+* many thanks to \"ryan bates\":http://workingwithrails.com/person/6491-ryan-bates for his most excellent \"Railscasts\":http://railscasts.com/\n* to our boys, pj and chris, of \"err free\":http://errfree.com/. their work at \"err the blog\":http://errtheblog.com/ has proven priceless during the tireless nights of development\n* to \"dru nelson\":http://www.xxeo.com/ for his support on IM and tips in keeping things simple.\n* and to \"fabio akita\":http://www.akitaonrails.com/ for his \"rails 2.0 blog tutorial\":http://www.akitaonrails.com/2007/12/12/rolling-with-rails-2-0-the-first-full-tutorial which was a good starting point.
 "
   draft: false
   permalink: about
