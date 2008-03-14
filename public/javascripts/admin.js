@@ -12,12 +12,12 @@ $(document).ready(function(){
   $("#admin .close, #admin .tab").click(function() {
     if ($("#admin .close").text() == 'close'){
       $("#admin .close").text("open");
-      $("#admin .menu-container").hide();
+      $("#admin .menu-container").animate({height:'hide'});
       createCookie('adminmenu', "true", 365);
     } else {
       $("#admin .close").text("close");
       createCookie('adminmenu', "false", 365);
-      $("#admin .menu-container").show(); 
+      $("#admin .menu-container").animate({height:'show'});
     }
     return false;
   });
