@@ -1,11 +1,20 @@
 #admin
   %p.tab 
     %a{:href => "#"}admin
-  .menu
-    .menu-body
+  .menu-container
+    .logout.menu  
+      %p.close
+        %a{:href => "#"}close
+      %p= link_to "log out", "/logout"
+      .clear
+    .posts.menu
+      .header
+        %h3 posts
+        %p= link_to "new post", "/posts/new"
+        .clear
       - if @recentcomments.any?
         .recentcomments
-          %h2 comments
+          %h2 latest comments
           - for comment in @recentcomments do
             .item
               = link_to truncate(comment.body_plain, 30, "..."), post_url(comment.post) + "#comment_#{comment.id}", :class => "view"
@@ -24,9 +33,10 @@
               .clear
       - if @draftposts.any? || @recentcomments.any?
         .clear
-    .menu-footer
-      = link_to "log out", "/logout"
-      = link_to "new post", "/posts/new"
-      = link_to "list pages", "/pages"
-      = link_to "new page", "/pages/new"
-      
+    .pages.menu
+      .header
+        %h3 pages
+        %p
+          = link_to "new page", "/pages/new"
+          = link_to "list pages", "/pages"
+        .clear

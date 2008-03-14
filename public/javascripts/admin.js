@@ -7,8 +7,8 @@ $(document).ready(function(){
   $(".comment, .post, .posts-edit .content, .page, .pages-edit .content").mouseout(function(){
     $("div.post .admin, div.comment .admin, div.page .admin").hide();
   });
-  $("#admin .menu").hide();
-  $("#admin .tab").click(function( ){
-    $("#admin .menu").animate({height:'toggle'}, 200);
+  $("#admin .menu-container").hide();
+  $("#admin .tab, #admin .close").click(function( ){
+    $("#admin .menu-container").animate({height:'toggle'}, 200);
   });
 });
