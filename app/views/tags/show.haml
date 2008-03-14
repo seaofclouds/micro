@@ -8,8 +8,10 @@
     - div_for(post) do
       - if admin?
         .admin
-          %p.edit=link_to 'edit', edit_post_path(post), :title => "Edit this post"
-          %p.delete= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this post"
+          .menu
+            %span.edit=link_to 'edit', edit_post_path(post), :title => "Edit this post"
+            %span.delete= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :title => "Delete this post"
+            .clear
       .post-header
         %h4=link_to h(post.title), post, :title => "View " + "'" + post.title + "'" 
         %p.meta
