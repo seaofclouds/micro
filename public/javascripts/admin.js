@@ -8,7 +8,26 @@ $(document).ready(function(){
     $("div.post .admin, div.comment .admin, div.page .admin").hide();
   });
   $("#admin .menu-container").hide();
-  $("#admin .tab, #admin .close").click(function( ){
-    $("#admin .menu-container").animate({height:'toggle'}, 200);
+  // toggle admin menu
+  $("#admin .close, #admin .tab").click(function() {
+    if ($("#admin .close").text() == 'close'){
+      $("#admin .close").text("open");
+      $("#admin .menu-container").hide();
+      createCookie('adminmenu', "true", 365);
+    } else {
+      $("#admin .close").text("close");
+      createCookie('adminmenu', "false", 365);
+      $("#admin .menu-container").show(); 
+    }
+    return false;
   });
+  // toggle admin menu with cookie
+  var adminmenu = readCookie('adminmenu'); 
+  if (adminmenu == 'false' || adminmenu == undefined) {
+    $("#admin .close").text("close");
+    $("#admin .menu-container").show();
+    }else{
+    $("#admin .close").text("open");  
+    $("#admin .menu-container").hide();
+    }
 });
