@@ -5,6 +5,7 @@ p{text-align:center;font-size:160%}. micro is blogware that fits in your pocket.
 inspired by the more robust "mephisto blogging system":http://mephistoblog.com, and by bloggers everywhere, micro is powered by ruby, rails, jquery, haml, textile and users like you. enjoy.
 
   git clone git@github.com:seaofclouds/micro.git
+  rake db:migrate
 
 h4. features
 
